@@ -107,3 +107,7 @@ Es el Data Warehouse de Amazon, es un producto diseñado para ser 10x más rápi
 | -------------- | -------------- | ----------|
 | Datos | Relacionales desde sistemas transaccionales, bases de datos, aplicaciones del negocio | No-relacionales y relacionales originadas en dispositivos IoT, sitios web, aplicaciones móviles, redes sociales, aplicaciones corporativas.
 | Esquema | Diseñado previo a la implementación | Escrito en el momento del análisis
+| Precio / rendimiento | Consultas más rápidas resulta en un costo mayor de almacenamiento | Consulta de resultados se vuelven más rápidos utilizando un almacenamiento de menor costo.
+| Calidad de los datos | Datos altamente depurados que sirven como fuente central de la verdad | Cualquier dato, el cual pudo o no ser depurado. (data cruda)
+| Usuarios | Analista de negocio | Científicos de datos, desarrolladores de datos y analistas de negocio (usando datos curados).
+| Analítica | Reportería en lote, Inteligencia de Negocio y Visualizaciones | Aprendizaje de Máquina, analítica predictiva, descubrimiento de datos y perfilamiento.
