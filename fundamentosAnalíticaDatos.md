@@ -19,7 +19,10 @@ Primero los datos se procesarán, transformándoles para que puedan ser consumid
 Hay dos grandes formas de consumir los datos, por consulta directa o por medio de herramientas de inteligencia de negocio. Las consultas directas sirven para análisis rápidas, generalmente están a cargo de un analista de datos. Las herramientas de inteligencia de negocio permiten producir reportes y tableros de control para ayudar a los consumidores a explorar los datos y a tomar decisiones.
 
 ## Los 5 desafios del análisis de datos 
-Te recomiendo mi publicación en medium sobre el desafio de las 5Vs https://medium.com/@macomeza/5-desafios-de-la-an%C3%A1litica-de-datos-950906b0fa42
+Te recomiendo mi publicación en medium sobre el desafio de las 5Vs [ir a 5 desafios de la analítica de datos](https://medium.com/@macomeza/5-desafios-de-la-an%C3%A1litica-de-datos-950906b0fa42)
+
+### Volumen
+> Cuando los negocios tienen más datos que los que pueden procesar y analizar, tienen un problema de volumen.
 
 
 
