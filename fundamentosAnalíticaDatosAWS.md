@@ -89,4 +89,21 @@ Son diferentes soluciones para diferentes problemas.
 Data warehouse - Almacen de Datos
 : Es un repositorio central da datos estructurados de varios origenes de datos. Estos datos son transformados, agrupados y preparados para reportes y análisis del negocio.
 
-Los datos fluyen desde
+Los datos fluyen desde los sistemas transaccionales, bases de datos relacionales y otras fuentes. Pueden incluir datos semi estructurados y no estructurados. Estas fuentes deben ser transformadas a datos estructurados antes de poderse almacenar.
+
+Los datos se guardan en el Data Warehouse usando un esquema, el cual define cómo los datos se guardarán en tablas, columnas y filas. El esquema fuerza algunas restricciones en los datos para asegurar su integridad. El proceso de transformación también requiere algunos pasos para que los datos se ajusten al esquema. Después del primer consumo de datos, el proceso puede continuar regularmente.
+
+Los analistas de negocio, científicos de datos y los tomadores de decisiones acceden los datos a través de herramienta de inteligencia de negocio, clientes SQL y otras apliaciones de analítica. 
+
+Data marts
+: Es un conjunto de datos de un Data Warehouse. Se enfoca en un tema específico o en una área funcional de la organización.
+
+#### Amazon Redshift
+
+Es el Data Warehouse de Amazon, es un producto diseñado para ser 10x más rápido que un Data Warehouse tradicional, más fácil de implementar y gestionar, seguro y escalable rápidamente para satisfacer las necesidades.
+
+#### Características de un Data Warehouse y un Data Lake
+| Característica | Data Warehouse | Data Lake |
+| -------------- | -------------- | ----------|
+| Datos | Relacionales desde sistemas transaccionales, bases de datos, aplicaciones del negocio | No-relacionales y relacionales originadas en dispositivos IoT, sitios web, aplicaciones móviles, redes sociales, aplicaciones corporativas.
+| Esquema | Diseñado previo a la implementación | Escrito en el momento del análisis
