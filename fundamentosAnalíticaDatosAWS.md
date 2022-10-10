@@ -83,8 +83,10 @@ La preparación de los datos requiere bastante esfuerzo, no hay atajos o respues
 
 [AWS Lake Formation](https://aws.amazon.com/es/lake-formation)
 
+#### Cuál es mejor un Data Warehouse o un Data Lake
+Son diferentes soluciones para diferentes problemas.
 
+Data warehouse - Almacen de Datos
+: Es un repositorio central da datos estructurados de varios origenes de datos. Estos datos son transformados, agrupados y preparados para reportes y análisis del negocio.
 
-
-
-
+Los datos fluyen desde
