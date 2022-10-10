@@ -68,5 +68,3 @@ Herramientas
 - Python / R y sus librerias especializadas.
 
 Con esta breve descripción de qué es y qué roles participan, te damos la bienvenida al maravilloso mundo de Ciencia de Datos.
-
-
