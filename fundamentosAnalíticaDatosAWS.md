@@ -122,3 +122,13 @@ Para implementar Hadoop en AWS se recomienda utilizar EMR. El cual permite que e
 ### Velocidad - procesamiento de datos
 > Cuando las organizaciones necesitan rápido conocimiento desde los datos que están recolectando, per los sistemas no pueden satisfacer la demanda, se presenta un problema de velocidad.
 
+#### Procesamiento de la información
+Es la recolección y manipulación de los datos para producir información con sentido para la organización. Se divide en dos partes, la recolección y el procesamiento.
+
+*Recolección* es obtener datos de diferentes fuentes y guardarlos en un destino común para su análisis.
+*Procesamiento* es darle formato, organizar y hacerle filtros a los datos.
+
+Hay dos tipos de procesamiento de datos
+- Lotes, se recibirán datos en intervalos programados (diario, por hora, cada n minutos), tienden a ser predecibles pues se espera que el tiempo sea constante a través del tiempo (suponiendo similar volumen de datos en cada lote). Pueden necesitarse también intervalos periódicos irregulares, esto es un poco más impredecible pues el volumen de datos puede cambiar muchísimo.
+- En directo - casi en tiempo real, se transmite en lotes a intervalos muy pequeños, tipicamente e procesan en los siguientes minutos de haberse obtenido. En tiempo real, se recibe en interavlos aún más pequeños y se procesa en milisegundos.
+
