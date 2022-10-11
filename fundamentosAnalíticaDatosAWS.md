@@ -53,18 +53,18 @@ El lago de datos nos permite comprender que información es la que tenemos almac
 - Se puede alimentar de información proveniente de sistemas y servidores propios de la organización, los soporta en su formato original. No requiere crear estructuras de datos, esquemas y transformaciones previas.
 - Datos relacionales, datos de las aplicaciones del negocio, aplicaciones móviles, dispositovos conectados a internet y redes sociales.
 - Obtener datos en vivo, en tiempo real.
-- Aprendizaje de máquina, se pueden generar hallazgos, incluyendo reportería sobre datos históricos o construcción de modelos para pronóstico u optimización.
+- Aprendizaje de máquina, se pueden generar conocimientos, incluyendo reportería sobre datos históricos o construcción de modelos para pronóstico u optimización.
 - Analítica de datos, dar acceso a la organización a procesar y a los datos ya procesados.
 
 ##### Beneficios de los lagos de datos
 - Fuente única de la verdad - para lograrlo se debe organizar adecuadamente y estructurar los datos que ingresarán al lago.
 - Guardar cualquier tipo de datos, sin importar la estructura - guardar arhivos relevantes, se deben establecer políticas de retención para que los datos se mantengan al día.
-- Puede ser analizada utilizando inteligencia artificial y aprendizaje de máquina - podemos ir más allá de las capacidades humanas de analítica y encontrar hallazgos significantes.
+- Puede ser analizada utilizando inteligencia artificial y aprendizaje de máquina - podemos ir más allá de las capacidades humanas de analítica y encontrar conocimientos significantivos.
 - Es una solución eficiente en costo.
 - Implementa cumplimiento y seguridad lideres en la industria.
 - Ofrece la ventaja de obtener datos de varias formas.
 - Categorizar y gestionar los datos. Podemos usar AWS Glue para entender la estructura de los datos de nuestro lago de datos, prepararla y cargarla a almacenamiento de dato, una vez Glue ha catalogado los datos, se puede buscar inmediatamente.
-- Permite convertir nuestros datos a hallazgos significativos.
+- Permite convertir nuestros datos a conocimientos significativos.
 
 #### Amazon EMR y Lagos de Datos
 Las organizaciones pueden ubicar los datos en un Lago de Datos y usar su propio marco de trabajo distribuido para el procesamiento de los mismos, tales como Apache Hadoop y Spark son soportados.
@@ -111,3 +111,14 @@ Es el Data Warehouse de Amazon, es un producto diseñado para ser 10x más rápi
 | Calidad de los datos | Datos altamente depurados que sirven como fuente central de la verdad | Cualquier dato, el cual pudo o no ser depurado. (data cruda)
 | Usuarios | Analista de negocio | Científicos de datos, desarrolladores de datos y analistas de negocio (usando datos curados).
 | Analítica | Reportería en lote, Inteligencia de Negocio y Visualizaciones | Aprendizaje de Máquina, analítica predictiva, descubrimiento de datos y perfilamiento.
+
+#### Apache Hadoop
+Utiliza una arquitectura de procesamiento distribuida, en la cual una tarea se realiza por varios servidores. Cada pieza del trabajo es distribuida a un cluster de servidores y se puede ejecutar y volver a ejecutar en cualquiera de los servidores. Usan frecuentemente el HDFS (sistema de archivos distribuido de Hadoop, en español), para almacenar los datos localmente para su procesamiento. Luego los resultados se reducen a un solo conjunto de datos. Un nodo, que fue designado como el principal, controla la distribución de tareas y puede manejar fallas automáticamente.
+
+Para implementar Hadoop en AWS se recomienda utilizar EMR. El cual permite que escojamos dos sistemas de archivos (un conjunto de reglas para gobernar cómo se guardan los archivos).
+- HDFS el nativo, el cual crea una copia temporal de los datos y luego la procesa y almacena en S3.
+- EMRFS la versión adaptada, la cual no necesita una copia temporal ahorrando segundos valiosos.
+
+### Velocidad - procesamiento de datos
+> Cuando las organizaciones necesitan rápido conocimiento desde los datos que están recolectando, per los sistemas no pueden satisfacer la demanda, se presenta un problema de velocidad.
+
