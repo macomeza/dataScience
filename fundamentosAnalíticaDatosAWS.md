@@ -143,5 +143,10 @@ Otra característica clave de la velocidad es la *aceleración*, significa la ta
 | Atributo | Procesamiento de lotes | Procesamiento en directo |
 |----------|------------------------|--------------------------|
 | Alcance | Las consultas o procesamiento es sobre todo o casi todos los datos de un set de datos | Consultas o procesamiento de datos en una ventana de tiempo, o solo lo más reciente.|
+| Tamaño | Lotes grandes de datos | Registros individuales o micro lotes de algunos pocos datos |
+| Latencia | Minutos a horas | segundos o milisegundos |
+| Análisis | Analíticas complejas | Funciones de respuesta simple, agrupados y métricas |
+
+#### Desafios de la velocidad
 
 
