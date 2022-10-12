@@ -129,6 +129,19 @@ Es la recolección y manipulación de los datos para producir información con s
 *Procesamiento* es darle formato, organizar y hacerle filtros a los datos.
 
 Hay dos tipos de procesamiento de datos
-- Lotes, se recibirán datos en intervalos programados (diario, por hora, cada n minutos), tienden a ser predecibles pues se espera que el tiempo sea constante a través del tiempo (suponiendo similar volumen de datos en cada lote). Pueden necesitarse también intervalos periódicos irregulares, esto es un poco más impredecible pues el volumen de datos puede cambiar muchísimo.
-- En directo - casi en tiempo real, se transmite en lotes a intervalos muy pequeños, tipicamente e procesan en los siguientes minutos de haberse obtenido. En tiempo real, se recibe en interavlos aún más pequeños y se procesa en milisegundos.
+- Lotes - se recibirán datos en intervalos programados (diario, por hora, cada n minutos), tienden a ser predecibles pues se espera que el tiempo sea constante a través del tiempo (suponiendo similar volumen de datos en cada lote). 
+- Periódico - pueden necesitarse también intervalos periódicos irregulares, esto es un poco más impredecible pues el volumen de datos puede cambiar muchísimo.
+- En directo - casi en tiempo real, se transmite en lotes a intervalos muy pequeños, tipicamente e procesan en los siguientes minutos de haberse obtenido. 
+- En tiempo real - se recibe en interavlos aún más pequeños y se procesa en milisegundos.
+
+Los datos primero se recolectan, tal cual desde su origen, luego se procesan hasta convertirlos en conocimiento.
+
+#### Aceleración de los datos
+Otra característica clave de la velocidad es la *aceleración*, significa la tasa a la cual se consumirán las colecciones de datos, tasa de procesamiento y de análisis. La aceleración no es constante es variable. El sistema debe ser capaz de manejar eficientemente los picos y bajadas.
+
+#### Diferencias en el procesamiento de lotes y en directo
+| Atributo | Procesamiento de lotes | Procesamiento en directo |
+|----------|------------------------|--------------------------|
+| Alcance | Las consultas o procesamiento es sobre todo o casi todos los datos de un set de datos | Consultas o procesamiento de datos en una ventana de tiempo, o solo lo más reciente.|
+
 
