@@ -156,4 +156,53 @@ El procesamiento de datos es la ejecución de una serie de programas, o trabajos
 
 #### Procesamiento de lotes de datos con Amazon EMR y Apache Hadoop
 
+Amazon EMR es un servicio administrado para implementar cargas de trabajo con Apache Hadoop, también se pueden ejecutar otros marcos de trabajo distribuidos tales como Apache Spark, HBase, Presto y Flink en EMR. Además podemos interactuar con otros almacenes de datos como S3 y DynamoDB.
+
+Los libros de Amazon EMR permiten el desarrollo sin servidor y un ambiente colaborativo para consultas de una sola vez y análisis exploratorio. Podemos manipular los datos y generar gráficas usando la interfaz gráfica. Permite monitorear los trabajos y hasta ayudarnos a hacer trazabilidad del código.
+
+##### Explorando Apache Hadoop
+Es un sustema escalable de almacenamiento y procesamiento de lotes de datos. Usa servidores comunes y les brinda tolerancia a fallas a nivel de software. Hadoop complementa los sistemas existentes de datos al poder ingerir datos en simultaneo de gran volumen, estructurados o no, desdes cualquier número de fuentes, lo cual permite un análisis más profundo que lo que un solo sistema puede brindar. Estos resultados se pueden entregar a cualquier sistema empresarial sin requerir de nuevo a Hadoop.
+
+##### Hadoop Common
+Es un conjunto de utilidades para Java que soportan los otros módulos de Hadoop. Estas libreras ayudan con la abstracción del sistema de archivos desde los componentes de procesamiento. Estos archivos de Java y sus scripts se requieren para iniciar Hadoop.
+
+##### HDFS Hadoop Distributed File System
+Es un sistema de archivos distribuido que almacena los datos en un ambiente de alta velocidad de nodos comunitarios. Esta arquitectura se asegura un ancho de banda muy alto para acceder a los datos de la aplicación.
+
+##### YARN
+Es el marco de trabajo de gestión de recursos responsable de calendarizar y ejecutar los trabajos de procesamiento.
+
+##### Hadoop MapReduce
+Es un sistema basado en YARN que permite el procesamiento en paralelo de grandes conjuntos de datos en el cluster.
+
+#### Arquitectura para procesamiento de lotes
+El procesamiento de lotes se puede llevar a cabo de diferentes formas en AWS.
+
+##### S3
+En un servicio de almacenamiento de objetos que ofrece gran escalabilidad, disponibilidad, seguridad y rendimiento.
+
+##### Lambda
+Nos permite ejecutar código sin provisionar servidores. Permite lanzar llamadas para operaciones de procesamiento.
+
+##### Amazon EMR - Elastic MapReduce
+Provee un marco de trabajo gestionado por Hadoop que simplifica, lo hace rápido y efectivo en costo el procesamiento de vastos volumenes de datos, a través de instancias de EC2. Permite realizar operaciones de analítica de gran complejidad.
+
+##### AWS Glue
+Es un servicio totalmente administrado para extraer, transformar y cargar, que hace fácil la preparación y carga de datos para analítica.
+
+##### Amazon Redshift
+Es una base de datos tipo data warehouse que es rápida y escalable que hace simple y eficiente en costo el poder analizar los datos a través del almacen de datos y de lagos de datos. Permite guardar grandes cantidades de datos transaccionales para propósito de analíticas.
+
+Una configuración típica de flujo de datos para un sistema de analítica de lotes básico, es utilizar S3 para almacenar los datos, Lambda para realizar el ETL del archivo recien subido, EMR para el ETL agregado (la carga pesada, consolidación de información y carga en el motor), Redshift como almacen de datos para guardar los datos necesarios para la reporteria.
+
+Podemos sustituir EMR por Glue, quien tiene la ventaja que es totalmente administrable, mientras que EMR requiere gestión y configuración de los componentes que requiere el servicio.
+
+##### Casos de uso para procesamiento de lotes
+- Analítica de bitácora.
+- Vista unificada de datos a través de múltiples almacenamientos de datos.
+- Análisis predictivo.
+- Consultas directamente a S3 como lago de datos.
+
+#### Procesamiento de datos en directo
+
 
