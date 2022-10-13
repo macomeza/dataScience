@@ -26,7 +26,7 @@ Hay dos grandes formas de consumir los datos, por consulta directa o por medio d
 ## Los 5 desafios del análisis de datos 
 Te recomiendo mi publicación en medium sobre el desafio de las 5Vs [ir a 5 desafios de la analítica de datos.](https://medium.com/@macomeza/5-desafios-de-la-an%C3%A1litica-de-datos-950906b0fa42)
 - [Volumen](#volumen)
-- [Velocidad)(#velocidad)
+- [Velocidad](#velocidad)
 
 ### Volumen
 > Cuando los negocios tienen más datos que los que pueden procesar y analizar, tienen un problema de volumen.
@@ -121,7 +121,7 @@ Para implementar Hadoop en AWS se recomienda utilizar EMR. El cual permite que e
 - HDFS el nativo, el cual crea una copia temporal de los datos y luego la procesa y almacena en S3.
 - EMRFS la versión adaptada, la cual no necesita una copia temporal ahorrando segundos valiosos.
 
-### Velocidad - procesamiento de datos
+### Velocidad
 > Cuando las organizaciones necesitan rápido conocimiento desde los datos que están recolectando, per los sistemas no pueden satisfacer la demanda, se presenta un problema de velocidad.
 
 #### Procesamiento de la información
