@@ -25,6 +25,8 @@ Hay dos grandes formas de consumir los datos, por consulta directa o por medio d
 
 ## Los 5 desafios del análisis de datos 
 Te recomiendo mi publicación en medium sobre el desafio de las 5Vs [ir a 5 desafios de la analítica de datos.](https://medium.com/@macomeza/5-desafios-de-la-an%C3%A1litica-de-datos-950906b0fa42)
+- [Volumen](#volumen)
+- [Velocidad)(#velocidad)
 
 ### Volumen
 > Cuando los negocios tienen más datos que los que pueden procesar y analizar, tienen un problema de volumen.
