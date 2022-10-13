@@ -147,6 +147,13 @@ Otra característica clave de la velocidad es la *aceleración*, significa la ta
 | Latencia | Minutos a horas | segundos o milisegundos |
 | Análisis | Analíticas complejas | Funciones de respuesta simple, agrupados y métricas |
 
-#### Desafios de la velocidad
+#### Procesamiento de datos por lotes
+Se ha pensado algunas veces que procesamiento en lotes es un proceso lento. Pero no es el caso. El procesamiento de lotes debe ser rápido y efectivo al consumir un gran volumen de datos de una sola vez. Este es un desafio que no es tan crítico para el procesamiento en directo.
+
+El procesamiento en lotes les brinda a las organizaciones la habilidad de poder navegar a más profundidad en los datos que han recolectado para producir analíticas complejas que no se pueden lograr con analíticas en vivo.
+
+El procesamiento de datos es la ejecución de una serie de programas, o trabajos, en uno o más computadoras sin intervención manual. Los lotes se recolectan asincronamente. El lote es enviado a un sistema de procesamiento cuando se cumplen ciertas condiciones, tales como una hora específica del día. Los resultados del trabajo de procesamiento se envia a una ubicación de almacenamiento que se puede consultar posteriormente.
+
+#### Procesamiento de lotes de datos con Amazon EMR y Apache Hadoop
 
 
