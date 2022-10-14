@@ -31,11 +31,18 @@ Te recomiendo mi publicación en medium sobre el desafio de las 5Vs [ir a 5 desa
 ### Volumen
 > Cuando los negocios tienen más datos que los que pueden procesar y analizar, tienen un problema de volumen.
 
+Secciones relacionadas a Volumen
 - [S3](#Amazon-S3)
 - [Lago de datos](#lago-de-datos)
 - [Qué datos podemos guardar en un lago de datos](#qu%C3%A9-datos-podemos-guardar-en-un-lago-de-datos)
 - [Beneficios de los lagos de datos](#beneficios-de-los-lagos-de-datos)
 - [Amazon EMR y Lagos de Datos](#amazon-emr-y-lagos-de-datos)
+- [Preparación de un Lago de Datos](#preparaci%C3%B3n-de-un-lago-de-datos)
+- [AWS Lake Formation](#aws-lake-formation)
+- [¿Cuál es mejor un Data Warehouse o un Data Lake?](#cu%C3%A1l-es-mejor-un-data-warehouse-o-un-data-lake)
+- [Amazon Redshift](#amazon-redshift)
+- [Características de un Data Warehouse y un Data Lake](#caracter%C3%ADsticas-de-un-data-warehouse-y-un-data-lake)
+- [Apache Hadoop](#apache-hadoop)
 
 #### Amazon S3
 Mientras más cerca esten los datos de tu sistema de procesamiento, mejor rendimiento tendrá el procesamiento. S3 significa Amazon Simple Storage Service (Servicio de Almacenamiento Simple) permite almacenar todos los datos semi estructurados y no estructurados.
