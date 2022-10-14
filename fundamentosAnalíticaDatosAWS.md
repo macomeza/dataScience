@@ -141,7 +141,7 @@ Para implementar Hadoop en AWS se recomienda utilizar EMR. El cual permite que e
 Secciones
 - [Procesamiento de la información](#procesamiento-de-la-informaci%C3%B3n)
 - [Aceleración de los datos](#aceleraci%C3%B3n-de-los-datos)
-- [Diferencias en el procesamiento de lotes y en directo](#diferencias-en-el-procesamiento-de-lotes-y-en-directo)
+- [Diferencias en el procesamiento de lotes y de transmisiones](#diferencias-en-el-procesamiento-de-lotes-y-de-transmisiones)
 - [Procesamiento de datos por lotes](#procesamiento-de-datos-por-lotes)
   - [Procesamiento de datos con Amazon EMR y Apache Hadoop](#procesamiento-de-lotes-de-datos-con-amazon-emr-y-apache-hadoop)
   - [Explorando Apache Hadoop](#explorando-apache-hadoop)
@@ -156,7 +156,7 @@ Secciones
     - [Glue](#aws-glue)
     - [Redshift](#amazon-redshift-1)
   - [Casos de uso](#casos-de-uso-para-procesamiento-de-lotes)
-- [Procesamiento de datos en directo](#procesamiento-de-datos-en-directo)
+- [Procesamiento de datos en transmisiones](#procesamiento-de-datos-en-tra)
   - [Procesamiento con Amazon Kinesis](#procesamiento-en-directo-con-amazon-kinesis)
   - [Arquitectura para procesamiento de flujos](#arquitectura-para-procesamiento-de-flujos) 
   - [Casos de uso](#casos-de-uso-de-flujo-de-datos-en-vivo)
@@ -178,8 +178,8 @@ Los datos primero se recolectan, tal cual, desde su origen, luego se procesan ha
 #### Aceleración de los datos
 Otra característica clave de la velocidad es la *aceleración*, significa la tasa a la cual se consumirán las colecciones de datos, tasa de procesamiento y de análisis. La aceleración no es constante es variable. El sistema debe ser capaz de manejar eficientemente los picos y bajadas.
 
-#### Diferencias en el procesamiento de lotes y en directo
-| Atributo | Procesamiento de lotes | Procesamiento en directo |
+#### Diferencias en el procesamiento de lotes y en transmisión
+| Atributo | Procesamiento de lotes | Procesamiento en transmisión |
 |----------|------------------------|--------------------------|
 | Alcance | Las consultas o procesamiento es sobre todo o casi todos los datos de un set de datos | Consultas o procesamiento de datos en una ventana de tiempo, o solo lo más reciente.|
 | Tamaño | Lotes grandes de datos | Registros individuales o micro lotes de algunos pocos datos |
@@ -242,13 +242,12 @@ Podemos sustituir EMR por Glue, quien tiene la ventaja que es totalmente adminis
 - Análisis predictivo.
 - Consultas directamente a S3 como lago de datos.
 
-#### Procesamiento de datos en directo
+#### Procesamiento de datos en transmisión
 Este tipo de procesamiento les permite a las organizaciones poder obtener conocimiento desde sus datos en segundos desde haber recolectado los datos.
 
 Los datos son enviados constantemente hacia el servicio en directo desde un productor, el flujo se procesa a registros en el consumidor y finalmente se envían a almacenamiento.
 
-
-#### Procesamiento en directo con Amazon Kinesis
+#### Procesamiento en transmisión con Amazon Kinesis
 Al procesar flujos en directo, se usan múltiples servicios, un servicio para ingerir los flujos constantes de datos, uno para procesar y analizar el flujo, otro para cargarlos en un almacenamiento de datos analíticos si fuera requerido. 
 - Amazon Kinesis Data Firehose - permite capturar, transformar y cargar flujos de datos hacia almacenamientos de datos de AWS para poder llevar a cabo analítica muy próxima a tiempo real por medio de las herramientas de inteligencia de negocio existentes de la organización.
 - Amazon Kinesis Data Streams - permite construir aplicaciones personalizadas en tiempo real que procesan los flujos de datos usando los marcos de trabajo populares para procesamiento de flujos.
