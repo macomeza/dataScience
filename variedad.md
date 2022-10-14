@@ -59,9 +59,9 @@ Hay dos grandes tipos, uno orientado al almacenamiento de transacciones (OLTP) y
 Las bases de datos operativas organizan los datos en tablas y están diseñadas para permitir escribir datos en simultáneo (insertar, actualizar o eliminar). Su eficiencia se mide en transacciones por segundo.
 
 ##### Bases de datos OLAP
-A menudo denominadas *almacenes de datos* o *datawarehouse* se organizan en tablas y están optimizadas para la consulta de datos. La eficiencia de este tipo de base de datos se mide en tiempo de respuesta de las consultas.
+A menudo denominadas *almacenes de datos* o *datawarehouse* se organizan en tablas y están optimizadas para la consulta de datos. La eficiencia de este tipo de base de datos se mide en tiempo de respuesta de las consultas. Se generan a partir de otras bases de datos.
 
-#### Comparación de OLTP y OLAP
+##### Comparación de OLTP y OLAP
 | Característica | OLTP | OLAP |
 |----------------|------|------|
 | Naturaleza | Transacciones constantes (consultas / actualizaciones) | Grandes actualizaciones periódicas, consultas complejas. |
@@ -72,12 +72,12 @@ A menudo denominadas *almacenes de datos* o *datawarehouse* se organizan en tabl
 | Usuarios | Muchas | Pocos |
 | Protección | Protección de datos robusta y constante. Tolerancia a errores. | Protección periódica. |
 
-#### Indexación de datos por filas y por columnas
+##### Indexación de datos por filas y por columnas
 Para poder hacer consultas rápidamente necesitamos índices, controlan la forma en que los datos se escriben físicamente y los organizan en base a las claves definidas. Un índice bien definido permitirá que la consulta lea directamente los registros en caso contrario, se tendría que leer la tabla completamente.
 
 En una base de datos operativa, generalmente se tiene un índice en las columnas de clave. Las consultas generalmente son de tipo búsqueda, devolviendo varias columnas para cada coincidencia con el criterio que se establezca. Este tipo de consultas requiere un índice por filas.
 
-En una base de datos de análisis, comúnmente se hacen consultas añadidas, tomando un gran número de filas las cuales se reducen a un solo resultado de una o más columnas. En estas consultas un índice columnar es muy útil.
+En una base de datos de análisis, comúnmente se hacen consultas añadidas, tomando un gran número de filas las cuales se reducen a un solo resultado de una o más columnas. En estas consultas un índice columnar es muy útil. Un índice columnar guarda un dato por cada dato diferente de la columna.
 
 | Característica | Índices por filas | Índices columnares |
 |----------------|-------------------|--------------------|
@@ -86,3 +86,46 @@ En una base de datos de análisis, comúnmente se hacen consultas añadidas, tom
 | Mejor escenario | Mostrar filas completas basados en una clave | Mostrar operaciones de valores de columnas |
 | Implementación | Sistemas transaccionales | Procesamiento analítico |
 | Compresión de datos | Baja a media | Alta |
+
+##### Amazon RDS
+Es la base de datos relacional de Amazon (Relational Database Service) es compatible con MySQL, PostreSQL, MariaDB, Oracle, SQL Server y Amazon Aurora. Es una base de datos tipo OLTP, implementa indexación basada en filas. Facilita la configuración, funcionamiento y escalado. Automatiza la gestión, como el aprovisionamiento de hardware, configuración de la base de datos, parches y copias de seguridad.
+
+##### Amazon Redshift
+Es un almacén de datos rápido y escalable, también permite analizar datos de un lago de datos. Puede ejecutar consultas desde lagos de datos en S3. Implementa indexación en columnas para máximo rendimiento de cargas de trabajo analíticas.
+
+##### Ventajas y desventajas de las bases de datos relacionales
+La principal ventaja es que es una tecnología probada, ampliamente adoptada y comprendida. 
+
+La principal desventaja es su escalabilidad y la rigidez de su esquema.
+
+#### Bases de datos no relacionales
+Los datos semiestructurados y no estructurados se almacenan en bases de datos no relacionales o NoSQL. Para evitar confusiones, las bases de datos NoSQL son un poco más que solo SQL. 
+
+##### Tipos de bases de datos no relacionales
+###### Documentos
+Almacena datos semiestructurados y no estructurados, se incluyen archivos tipo JSON, BSON, XML. Los archivos contienen datos como una serie de elementos, cada elemento es una instancia de un objeto. 
+
+Ventajas:
+- Flexibilidad.
+- Fácil de escalar.
+- No es necesario planificar el tipo de dato.
+
+Debilidades:
+- No cumple con ACID.
+- No se puede consultar entre archivos.
+
+###### Valor de clave
+Almacenan datos no estructurados en forma de pares de valor y clave. Tienen una tabla única. Se almacenan en forma de objeto blob y no requieren un esquema definido.
+
+Ventajas:
+- Muy flexible.
+- Gran variedad de tipos de datos.
+- Vínculo directo entre clave y valores, lo cual no requiere indexación ni uniones.
+- El contenido se puede copiar fácilmente a otros sistemas.
+
+Debilidades:
+- Imposible consultar valores individuales, porque son un bloque.
+- Actualizar o editar el contenido es muy difícil.
+- No es fácil modelar objetos en pares de valor y clave.
+
+###### Grafos
