@@ -27,6 +27,7 @@ Hay dos grandes formas de consumir los datos, por consulta directa o por medio d
 Te recomiendo mi publicación en medium sobre el desafío de las 5Vs [ir a 5 desafíos de la analítica de datos.](https://medium.com/@macomeza/5-desafios-de-la-an%C3%A1litica-de-datos-950906b0fa42)
 - [Volumen](#volumen)
 - [Velocidad](#velocidad)
+- [Variedad](#variedad)
 
 ### Volumen
 > Cuando los negocios tienen más datos que los que pueden procesar y analizar, tienen un problema de volumen.
@@ -268,3 +269,4 @@ Al procesar flujos en directo, se usan múltiples servicios, un servicio para in
 - Análisis de datos originados en dispositivos de IoT.
 
 ### Variedad
+> Cuando la organización está *abrumada* por la gran cantidad de fuentes de datos que se deben analizar y no encuentran sistemas para llevar a cabo la analítica, tenemos un problema de variedad.
