@@ -137,6 +137,19 @@ Para implementar Hadoop en AWS se recomienda utilizar EMR. El cual permite que e
 ### Velocidad
 > Cuando las organizaciones necesitan rápido conocimiento desde los datos que están recolectando, pero los sistemas no pueden satisfacer la demanda, se presenta un problema de velocidad.
 
+Secciones
+- [Procesamiento de la información](#procesamiento-de-la-informaci%C3%B3n)
+- [Aceleración de los datos](#aceleraci%C3%B3n-de-los-datos)
+- [Diferencias en el procesamiento de lotes y en directo](#diferencias-en-el-procesamiento-de-lotes-y-en-directo)
+- [Procesamiento de datos por lotes](#procesamiento-de-datos-por-lotes)
+- [Procesamiento de datos con Amazon EMR y Apache Hadoop](#procesamiento-de-lotes-de-datos-con-amazon-emr-y-apache-hadoop)
+- [Explorando Apache Hadoop](#explorando-apache-hadoop)
+  - [Hadoop Common](#hadoop-common)
+  - [HDFS](#hdfs-hadoop-distributed-file-system)
+  - [YARN](#yarn)
+  - [Hadoop MapReduce](#hadoop-mapreduce)
+- [Arquitectura para procesamiento de lotes](#arquitectura-para-procesamiento-de-lotes)
+
 #### Procesamiento de la información
 Es la recolección y manipulación de los datos para producir información con sentido para la organización. Se divide en dos partes, la recolección y el procesamiento.
 
