@@ -157,8 +157,8 @@ Secciones
     - [Redshift](#amazon-redshift-1)
   - [Casos de uso](#casos-de-uso-para-procesamiento-de-lotes)
 - [Procesamiento de datos en transmisiones](#procesamiento-de-datos-en-transmisi%C3%B3n)
-  - [Procesamiento con Amazon Kinesis](#procesamiento-en-directo-con-amazon-kinesis)
-  - [Arquitectura para procesamiento combinado](#arquitectura-para-procesamiento-de-flujos) 
+  - [Procesamiento con Amazon Kinesis](#procesamiento-en-transmisi%C3%B3n-con-amazon-kinesis))
+  - [Arquitectura para procesamiento combinado](#arquitectura-para-procesamiento-combinado) 
   - [Casos de uso](#casos-de-uso-de-flujo-de-datos-en-vivo)
 
 #### Procesamiento de la información
