@@ -141,7 +141,7 @@ Para implementar Hadoop en AWS se recomienda utilizar EMR. El cual permite que e
 Secciones
 - [Procesamiento de la información](#procesamiento-de-la-informaci%C3%B3n)
 - [Aceleración de los datos](#aceleraci%C3%B3n-de-los-datos)
-- [Diferencias en el procesamiento de lotes y de transmisiones](#diferencias-en-el-procesamiento-de-lotes-y-de-transmisiones)
+- [Diferencias en el procesamiento de lotes y de transmisiones](#diferencias-en-el-procesamiento-de-lotes-y-en-transmisi%C3%B3n)
 - [Procesamiento de datos por lotes](#procesamiento-de-datos-por-lotes)
   - [Procesamiento de datos con Amazon EMR y Apache Hadoop](#procesamiento-de-lotes-de-datos-con-amazon-emr-y-apache-hadoop)
   - [Explorando Apache Hadoop](#explorando-apache-hadoop)
@@ -156,9 +156,9 @@ Secciones
     - [Glue](#aws-glue)
     - [Redshift](#amazon-redshift-1)
   - [Casos de uso](#casos-de-uso-para-procesamiento-de-lotes)
-- [Procesamiento de datos en transmisiones](#procesamiento-de-datos-en-tra)
+- [Procesamiento de datos en transmisiones](#procesamiento-de-datos-en-transmisi%C3%B3n)
   - [Procesamiento con Amazon Kinesis](#procesamiento-en-directo-con-amazon-kinesis)
-  - [Arquitectura para procesamiento de flujos](#arquitectura-para-procesamiento-de-flujos) 
+  - [Arquitectura para procesamiento combinado](#arquitectura-para-procesamiento-de-flujos) 
   - [Casos de uso](#casos-de-uso-de-flujo-de-datos-en-vivo)
 
 #### Procesamiento de la información
@@ -254,7 +254,7 @@ Al procesar flujos en directo, se usan múltiples servicios, un servicio para in
 - Amazon Kinesis Video Streams - hace más fácil asegurar los flujos de video desde dispositivos conectados a AWS para analítica, aprendizaje de máquina (ML) y otros tipos de procesamiento.
 - Amazon Kinesis Data Analytics - es la forma más fácil de procesar flujos de datos en tiempo real con SQL o Java sin tener que aprender nuevos lenguajes de programación o marcos de trabajo para procesamiento.
 
-#### Arquitectura para procesamiento de flujos
+#### Arquitectura para procesamiento combinado
 - Kinesis Data Firehose captura transforma y carga en casi tiempo real.
 - Kinesis Data Analytics procesa los flujos de datos en tiempo real con SQL o Java.
 - S3 almacena los resultados para análisis más profundo.
