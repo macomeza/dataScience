@@ -278,7 +278,7 @@ Secciones
   - [Datos semiestructurados](#datos-semiestructurados)
   - [Datos no estructurados](#datos-no-estructurados)
   - [Desafíos asociados](#desaf%C3%ADos-asociados-a-la-variedad)
-  - 
+- [Almacenes de datos estructurados]()
 
 #### Tipos de orígenes de datos
 > Los datos estructurados facilitan el análisis de datos, pero no son flexible. Los semiestructurados pueden necesitar preprocesamiento, pero son muy flexibles. Los no estructurados tienen todo lo que necesitamos, pero en medio de muchas cosas que no nos sirven.
@@ -296,3 +296,40 @@ Se almacena en archivos, no tiene esquema predefinido, puede ser un archivo de c
 #### Desafíos asociados a la variedad
 - Necesidad de combinar datos estructurados y semiestructurados.
 
+#### Almacenes de datos estructurados
+##### Datos de archivo plano
+Son estructuras sencillas, muchas veces con extensión txt o csv, no parecen bases de datos pero tienen los requisitos básicos. A continuación algunas características:
+- Valores duplicados. 
+- Valores ambiguos.
+- Datos faltantes.
+- No se pueden establecer relaciones entre archivos.
+
+##### Bases de datos relacionales
+A partir de un proceso de normalización se toman archivos planos y se convierten en una base de datos relacional. Algunas ventajas de la normalización son reducir la redundancia, aumentar la fiabilidad y proporcionar más coherencia en los datos.
+
+Cada entidad recibe el nombre de tabla y las escrituras o lecturas se hacen por medio del lenguaje SQL (lenguaje de consulta estructurado). Cada campo se guarda como columna, la cual es un atributo de una entidad. Un registro individual se guarda en filas dentro de cada tabla. Cada tabla incluye una clave primaria que brinda la garantía que cada fila será única.
+
+Se pueden crear relaciones creando una clave externa o foránea, que relaciona una clave primaria con el de otra tabla.
+
+Una base de datos relacional cumple con ACID (Atomicidad se ejecuta todo o ninguno, Consistencia solo se empieza lo que se puede acabar, Aislamiento una operación no puede afectar a otras y Durabilidad la opreación persistirá). 
+
+Una de las principales desventajas es que algunas consultas complejas se hacen lentas.
+
+##### Tipos de sistemas de información
+Hay dos grandes tipos, uno orientado al almacenamiento de transacciones (OLTP) y otro para el proceso de análisis de estas (OLAP).
+
+###### Bases de datos OLTP
+Las bases de datos operativas organizan los datos en tablas y están diseñadas para permitir escribir datos en simultáneo (insertar, actualizar o eliminar). Su eficiencia se mide en transacciones por segundo.
+
+###### Bases de datos OLAP
+A menudo denominadas *almacenes de datos* o *datawarehouse* se organizan en tablas y están optimizadas para la consulta de datos. La eficiencia de este tipo de base de datos se mide en tiempo de respuesta de las consultas.
+
+| Característica | OLTP | OLAP |
+|----------------|------|------|
+| Naturaleza | Transacciones constantes (consultas / actualizaciones) | Grandes actualizaciones periódicas, consultas complejas.|
+| Ejemplos | Contabilidades, transacciones de una tienda | Informes, tableros de control. |
+| Tipo | Datos operativos | Datos consolidados |
+| Retención de datos | A corto plazo (2-6 meses) | A largo plazo (2-5 años) |
+| Almacenamiento | GB | TB / PB |
+| Usuarios | Muchas | Pocos |
+| Protección | Protección de datos robusta y constante. Tolerancia a errores. | Protección periódica. |
