@@ -273,10 +273,10 @@ Al procesar flujos en directo, se usan múltiples servicios, un servicio para in
 Se dice que hay tantos tipos de datos como personas. Los origenes 
 
 Secciones
-- [Tipos de orígenes de datos]()
-  - [Datos estructurados]()
-  - [Datos semiestructurados]()
-  - [Datos no estructurados]()
+- [Tipos de orígenes de datos](#tipos-de-or%C3%ADgenes-de-datos)
+  - [Datos estructurados](#datos-estructurados)
+  - [Datos semiestructurados](#datos-semiestructurados)
+  - [Datos no estructurados](#datos-no-estructurados)
   - [Características de los orígenes de datos]()
   - [Desafíos asociados]()
   - 
