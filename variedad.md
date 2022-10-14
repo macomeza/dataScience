@@ -75,9 +75,9 @@ A menudo denominadas *almacenes de datos* o *datawarehouse* se organizan en tabl
 #### Indexación de datos por filas y por columnas
 Para poder hacer consultas rápidamente necesitamos índices, controlan la forma en que los datos se escriben físicamente y los organizan en base a las claves definidas. Un índice bien definido permitirá que la consulta lea directamente los registros en caso contrario, se tendría que leer la tabla completamente.
 
-En una base de datos operativa, generalmente se tiene un índice en las columnas de clave. Las consultas generalmente son de tipo búsqueda, devolviendo varias columnas para cada coincidencia con el criterio que se establezca.
+En una base de datos operativa, generalmente se tiene un índice en las columnas de clave. Las consultas generalmente son de tipo búsqueda, devolviendo varias columnas para cada coincidencia con el criterio que se establezca. Este tipo de consultas requiere un índice por filas.
 
-En una base de datos de análisis, comunmente se hacen consultas añadidas, tomando un gran número de filas las cuales se reducen a un solo resultado de una o más columnas. 
+En una base de datos de análisis, comúnmente se hacen consultas añadidas, tomando un gran número de filas las cuales se reducen a un solo resultado de una o más columnas. En estas consultas un índice columnar es muy útil.
 
 | Característica | Índices por filas | Índices columnares |
 |----------------|-------------------|--------------------|
