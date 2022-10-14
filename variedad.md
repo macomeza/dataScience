@@ -15,6 +15,7 @@ Secciones
   - [Bases de datos OLTP](#bases-de-datos-oltp)
   - [Bases de datos OLAP](#bases-de-datos-olap)
 - [Comparación de OLTP y OLAP](#comparaci%C3%B3n-de-oltp-y-olap)
+- [Indexación por filas y por columnas](#indexaci%C3%B3n-de-datos-por-filas-y-por-columnas)
 
 #### Tipos de orígenes de datos
 > Los datos estructurados facilitan el análisis de datos, pero no son flexible. Los semiestructurados pueden necesitar preprocesamiento, pero son muy flexibles. Los no estructurados tienen todo lo que necesitamos, pero en medio de muchas cosas que no nos sirven.
