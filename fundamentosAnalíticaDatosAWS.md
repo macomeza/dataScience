@@ -277,17 +277,22 @@ Secciones
   - [Datos estructurados](#datos-estructurados)
   - [Datos semiestructurados](#datos-semiestructurados)
   - [Datos no estructurados](#datos-no-estructurados)
-  - [Características de los orígenes de datos]()
   - [Desafíos asociados]()
   - 
 
 #### Tipos de orígenes de datos
-> Los datos estructurados facilitan el análisis de datos pero no son flexible. Los semiestructurados pueden necesita preprocesamiento pero son muy flexibles. Los no estructurados tienen todo lo que necesitamos pero en medio de muchas cosas que no nos sirven.
+> Los datos estructurados facilitan el análisis de datos, pero no son flexible. Los semiestructurados pueden necesitar preprocesamiento, pero son muy flexibles. Los no estructurados tienen todo lo que necesitamos, pero en medio de muchas cosas que no nos sirven.
+> El 10% de los datos es estructurado, otro 10% es semiestructurado y 80% es no estructurado.
 
 ##### Datos estructurados
-Se almacenan en formato tabular, lo más común es dentro de un sistema de gestión de bases de datos. Tienen un esquema llamado modelo relacional que permite definir su estructura y los elementos que forman parte de cada tabla y se indica si tiene relación con otras tablas. Una tabla está formada de varias columnas y cada registro individual se almacena en filas. Permite realizar muchas operaciones de escritura y actualización de datos transaccionales. Permite muchas operaciones de lectura para bases de datos analíticas. Cuando se requiere realizar ajustes al esquema es complicado pues requiere actualizar todos los registros de una tabla.
+Se almacenan en formato tabular, lo más común es almacenar dentro de un sistema de gestión de bases de datos. Tienen un esquema llamado modelo relacional que permite definir su estructura y los elementos que forman parte de cada tabla y se indica si tiene relación con otras tablas. Una tabla está formada de varias columnas y cada registro individual se almacena en filas. Permite realizar muchas operaciones de escritura y actualización de datos transaccionales. Permite muchas operaciones de lectura para bases de datos analíticas. Cuando se requiere realizar ajustes al esquema es complicado pues requiere actualizar todos los registros de una tabla.
 
 ##### Datos semiestructurados
-
+Se almacenan como elementos y atributos, en una base de datos no relacional, sin esquemas predefinidos y se puede almacenar en archivos. Cada archivo tiene su propio esquema o estructura, esto le permite ser altamente flexible. No se pueden unir archivos entre sí.
 
 ##### Datos no estructurados
+Se almacena en archivos, no tiene esquema predefinido, puede ser un archivo de cualquier tipo y cualquier contenido. Estos archivos siempre se deben preprocesar y se requiere de un servicio para añadir etiquetas a cada archivo o bien realizar un catálogo de datos.
+
+#### Desafíos asociados a la variedad
+- Necesidad de combinar datos estructurados y semiestructurados.
+
