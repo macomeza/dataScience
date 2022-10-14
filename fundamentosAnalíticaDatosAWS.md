@@ -155,6 +155,10 @@ Secciones
     - [Glue](#aws-glue)
     - [Redshift](#amazon-redshift-1)
   - [Casos de uso](#casos-de-uso-para-procesamiento-de-lotes)
+- [Procesamiento de datos en directo](#procesamiento-de-datos-en-directo)
+  - [Procesamiento con Amazon Kinesis](#procesamiento-en-directo-con-amazon-kinesis)
+  - [Arquitectura para procesamiento de flujos](#arquitectura-para-procesamiento-de-flujos) 
+  - [Casos de uso](#casos-de-uso-de-flujo-de-datos-en-vivo)
 
 #### Procesamiento de la información
 Es la recolección y manipulación de los datos para producir información con sentido para la organización. Se divide en dos partes, la recolección y el procesamiento.
@@ -263,4 +267,4 @@ Al procesar flujos en directo, se usan múltiples servicios, un servicio para in
 - Evolucionar de lote a analítica en tiempo real.
 - Análisis de datos originados en dispositivos de IoT.
 
-
+### Variedad
