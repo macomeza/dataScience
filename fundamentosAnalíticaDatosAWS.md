@@ -271,19 +271,19 @@ Al procesar flujos en directo, se usan múltiples servicios, un servicio para in
 > Cuando la organización está *abrumada* por la gran cantidad de fuentes de datos que se deben analizar y no encuentra sistemas para llevar a cabo la analítica, tenemos un problema de variedad.
 
 Se dice que hay tantos tipos de datos como personas. Los origenes 
-
 Secciones
 - [Tipos de orígenes de datos](#tipos-de-or%C3%ADgenes-de-datos)
   - [Datos estructurados](#datos-estructurados)
   - [Datos semiestructurados](#datos-semiestructurados)
   - [Datos no estructurados](#datos-no-estructurados)
   - [Desafíos asociados](#desaf%C3%ADos-asociados-a-la-variedad)
-- [Almacenes de datos estructurados]()
+- [Almacenes de datos estructurados](#almacenes-de-datos-estructurados)
   - [Datos de archivo plano](#datos-de-archivo-plano)
   - [Base de datos relacionales](#bases-de-datos-relacionales)
 - [Tipos de sistemas de información](#tipos-de-sistemas-de-informaci%C3%B3n)
   - [Bases de datos OLTP](#bases-de-datos-oltp)
   - [Bases de datos OLAP](#bases-de-datos-olap)
+- [Comparación de OLTP y OLAP](#comparaci%C3%B3n-de-oltp-y-olap)
 
 #### Tipos de orígenes de datos
 > Los datos estructurados facilitan el análisis de datos, pero no son flexible. Los semiestructurados pueden necesitar preprocesamiento, pero son muy flexibles. Los no estructurados tienen todo lo que necesitamos, pero en medio de muchas cosas que no nos sirven.
@@ -303,7 +303,7 @@ Se almacena en archivos, no tiene esquema predefinido, puede ser un archivo de c
 
 #### Almacenes de datos estructurados
 ##### Datos de archivo plano
-Son estructuras sencillas, muchas veces con extensión txt o csv, no parecen bases de datos pero tienen los requisitos básicos. A continuación algunas características:
+Son estructuras sencillas, muchas veces con extensión txt o csv, no parecen bases de datos pero tienen los requisitos básicos. A continuación, algunas características:
 - Valores duplicados. 
 - Valores ambiguos.
 - Datos faltantes.
@@ -316,7 +316,7 @@ Cada entidad recibe el nombre de tabla y las escrituras o lecturas se hacen por 
 
 Se pueden crear relaciones creando una clave externa o foránea, que relaciona una clave primaria con el de otra tabla.
 
-Una base de datos relacional cumple con ACID (Atomicidad se ejecuta todo o ninguno, Consistencia solo se empieza lo que se puede acabar, Aislamiento una operación no puede afectar a otras y Durabilidad la opreación persistirá). 
+Una base de datos relacional cumple con ACID (Atomicidad se ejecuta todo o ninguno, Consistencia solo se empieza lo que se puede acabar, Aislamiento una operación no puede afectar a otras y Durabilidad la operación persistirá). 
 
 Una de las principales desventajas es que algunas consultas complejas se hacen lentas.
 
@@ -332,7 +332,7 @@ A menudo denominadas *almacenes de datos* o *datawarehouse* se organizan en tabl
 #### Comparación de OLTP y OLAP
 | Característica | OLTP | OLAP |
 |----------------|------|------|
-| Naturaleza | Transacciones constantes (consultas / actualizaciones) | Grandes actualizaciones periódicas, consultas complejas.|
+| Naturaleza | Transacciones constantes (consultas / actualizaciones) | Grandes actualizaciones periódicas, consultas complejas. |
 | Ejemplos | Contabilidades, transacciones de una tienda | Informes, tableros de control. |
 | Tipo | Datos operativos | Datos consolidados |
 | Retención de datos | A corto plazo (2-6 meses) | A largo plazo (2-5 años) |
