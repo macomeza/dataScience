@@ -219,4 +219,29 @@ Podemos sustituir EMR por Glue, quien tiene la ventaja que es totalmente adminis
 - Consultas directamente a S3 como lago de datos.
 
 #### Procesamiento de datos en directo
+Este tipo de procesamiento les permite a las organizaciones poder obtener conocimiento desde sus datos en segundos desde haber recolectado los datos.
+
+Los datos son enviados constantemente hacia el servicio en directo desde un productor, el flujo se procesa a registros en el consumidor y finalmente se envían a almacenamiento.
+
+
+#### Procesamiento en directo con Amazon Kinesis
+Al procesar flujos en directo, se usan múltiples servicios, un servicio para ingerir los flujos constantes de datos, uno para procesar y analizar el flujo, otro para cargarlos en un almacenamiento de datos analíticos si fuera requerido. 
+- Amazon Kinesis Data Firehose - permite capturar, transformar y cargar flujos de datos hacia almacenamientos de datos de AWS para poder llevar a cabo analítica muy próxima a tiempo real por medio de las herramientas de inteligencia de negocio existentes de la organización.
+- Amazon Kinesis Data Streams - permite construir aplicaciones personalizadas en tiempo real que procesan los flujos de datos usando los marcos de trabajo populares para procesamiento de flujos.
+- Amazon Kinesis Video Streams - hace más fácil asegurar los flujos de video desde dispositivos conectados a AWS para analítica, aprendizaje de máquina (ML) y otros tipos de procesamiento.
+- Amazon Kinesis Data Analytics - es la forma más fácil de procesar flujos de datos en tiempo real con SQL o Java sin tener que aprender nuevos lenguajes de programación o marcos de trabajo para procesamiento.
+
+#### Arquitectura para procesamiento de flujos
+- Kinesis Data Firehose captura transforma y carga en casi tiempo real.
+- Kinesis Data Analytics procesa los flujos de datos en tiempo real con SQL o Java.
+- S3 almacena los resultados para análisis más profundo.
+- Athena es un servicio para consultas interactivas que hace fácil el analizar datos en S3 usando SQL estándar. Athena es sin servidor.
+- Quicksight es una potente herramienta de inteligencia de negocios para entregar conocimiento a todos los interesados en la organización.
+- Glue puede utilizarse para combinar los almacenes de datos en S3, uno que se procesó en tiempo real y otro que se procesó en lote y cuyo resultado se puede cargar de vuelta a otro bucket de S3.
+
+##### Casos de uso de flujo de datos en vivo
+- Aplicaciones de analítica de video.
+- Evolucionar de lote a analítica en tiempo real.
+- Análisis de datos originados en dispositivos de IoT.
+
 
