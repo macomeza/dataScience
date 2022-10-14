@@ -268,4 +268,15 @@ Al procesar flujos en directo, se usan múltiples servicios, un servicio para in
 - Análisis de datos originados en dispositivos de IoT.
 
 ### Variedad
-> Cuando la organización está *abrumada* por la gran cantidad de fuentes de datos que se deben analizar y no encuentran sistemas para llevar a cabo la analítica, tenemos un problema de variedad.
+> Cuando la organización está *abrumada* por la gran cantidad de fuentes de datos que se deben analizar y no encuentra sistemas para llevar a cabo la analítica, tenemos un problema de variedad.
+
+Se dice que hay tantos tipos de datos como personas. Los origenes 
+
+Secciones
+- [Tipos de orígenes de datos]()
+  - [Datos estructurados]()
+  - [Datos semiestructurados]()
+  - [Datos no estructurados]()
+  - [Características de los orígenes de datos]()
+  - [Desafíos asociados]()
+  - 
