@@ -280,3 +280,14 @@ Secciones
   - [Características de los orígenes de datos]()
   - [Desafíos asociados]()
   - 
+
+#### Tipos de orígenes de datos
+> Los datos estructurados facilitan el análisis de datos pero no son flexible. Los semiestructurados pueden necesita preprocesamiento pero son muy flexibles. Los no estructurados tienen todo lo que necesitamos pero en medio de muchas cosas que no nos sirven.
+
+##### Datos estructurados
+Se almacenan en formato tabular, lo más común es dentro de un sistema de gestión de bases de datos. Tienen un esquema llamado modelo relacional que permite definir su estructura y los elementos que forman parte de cada tabla y se indica si tiene relación con otras tablas. Una tabla está formada de varias columnas y cada registro individual se almacena en filas. Permite realizar muchas operaciones de escritura y actualización de datos transaccionales. Permite muchas operaciones de lectura para bases de datos analíticas. Cuando se requiere realizar ajustes al esquema es complicado pues requiere actualizar todos los registros de una tabla.
+
+##### Datos semiestructurados
+
+
+##### Datos no estructurados
