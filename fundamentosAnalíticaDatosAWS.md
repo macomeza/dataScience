@@ -279,6 +279,11 @@ Secciones
   - [Datos no estructurados](#datos-no-estructurados)
   - [Desafíos asociados](#desaf%C3%ADos-asociados-a-la-variedad)
 - [Almacenes de datos estructurados]()
+  - [Datos de archivo plano](#datos-de-archivo-plano)
+  - [Base de datos relacionales](#bases-de-datos-relacionales)
+- [Tipos de sistemas de información](#tipos-de-sistemas-de-informaci%C3%B3n)
+  - [Bases de datos OLTP](#bases-de-datos-oltp)
+  - [Bases de datos OLAP](#bases-de-datos-olap)
 
 #### Tipos de orígenes de datos
 > Los datos estructurados facilitan el análisis de datos, pero no son flexible. Los semiestructurados pueden necesitar preprocesamiento, pero son muy flexibles. Los no estructurados tienen todo lo que necesitamos, pero en medio de muchas cosas que no nos sirven.
@@ -315,15 +320,16 @@ Una base de datos relacional cumple con ACID (Atomicidad se ejecuta todo o ningu
 
 Una de las principales desventajas es que algunas consultas complejas se hacen lentas.
 
-##### Tipos de sistemas de información
+#### Tipos de sistemas de información
 Hay dos grandes tipos, uno orientado al almacenamiento de transacciones (OLTP) y otro para el proceso de análisis de estas (OLAP).
 
-###### Bases de datos OLTP
+##### Bases de datos OLTP
 Las bases de datos operativas organizan los datos en tablas y están diseñadas para permitir escribir datos en simultáneo (insertar, actualizar o eliminar). Su eficiencia se mide en transacciones por segundo.
 
-###### Bases de datos OLAP
+##### Bases de datos OLAP
 A menudo denominadas *almacenes de datos* o *datawarehouse* se organizan en tablas y están optimizadas para la consulta de datos. La eficiencia de este tipo de base de datos se mide en tiempo de respuesta de las consultas.
 
+#### Comparación de OLTP y OLAP
 | Característica | OLTP | OLAP |
 |----------------|------|------|
 | Naturaleza | Transacciones constantes (consultas / actualizaciones) | Grandes actualizaciones periódicas, consultas complejas.|
