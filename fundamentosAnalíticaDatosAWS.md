@@ -277,7 +277,7 @@ Secciones
   - [Datos estructurados](#datos-estructurados)
   - [Datos semiestructurados](#datos-semiestructurados)
   - [Datos no estructurados](#datos-no-estructurados)
-  - [Desafíos asociados]()
+  - [Desafíos asociados](#desaf%C3%ADos-asociados-a-la-variedad)
   - 
 
 #### Tipos de orígenes de datos
