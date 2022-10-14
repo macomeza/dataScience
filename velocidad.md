@@ -1,5 +1,5 @@
 ### Velocidad
-> Cuando las organizaciones necesitan rápido conocimiento desde los datos que están recolectando, pero los sistemas no pueden satisfacer la demanda, se presenta un problema de velocidad.
+> Cuándo las organizaciones necesitan rápido conocimiento desde los datos que están recolectando, pero los sistemas no pueden satisfacer la demanda, se presenta un problema de velocidad.
 
 Secciones
 - [Procesamiento de la información](#procesamiento-de-la-informaci%C3%B3n)
