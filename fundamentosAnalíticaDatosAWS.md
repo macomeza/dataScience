@@ -33,7 +33,7 @@ Te recomiendo mi publicación en medium sobre el desafio de las 5Vs [ir a 5 desa
 
 - [S3](#Amazon-S3)
 - [Lago de datos](#lago-de-datos)
-- [Qué datos podemos guardar en un lago de datos](#que-datos-podemos-guardar-en-un-lago-de-datos?)
+- [Qué datos podemos guardar en un lago de datos](#qu%C3%A9-datos-podemos-guardar-en-un-lago-de-datos)
 - [Beneficios de los lagos de datos](#beneficios-de-los-lagos-de-datos)
 - [Amazon EMR y Lagos de Datos](#amazon-emr-y-lagos-de-datos)
 
