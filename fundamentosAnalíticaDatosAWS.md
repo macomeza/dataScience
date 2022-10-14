@@ -31,6 +31,12 @@ Te recomiendo mi publicación en medium sobre el desafio de las 5Vs [ir a 5 desa
 ### Volumen
 > Cuando los negocios tienen más datos que los que pueden procesar y analizar, tienen un problema de volumen.
 
+- [S3](#Amazon-S3)
+- [Lago de datos](#lago-de-datos)
+- [Qué datos podemos guardar en un lago de datos](#qué-datos-podemos-guardar-en-un-lago-de-datos?)
+- [Beneficios de los lagos de datos](#beneficios-de-los-lagos-de-datos)
+- [Amazon EMR y Lagos de Datos](#amazon-emr-y-lagos-de-datos)
+
 #### Amazon S3
 Mientras más cerca esten los datos de tu sistema de procesamiento, mejor rendimiento tendrá el procesamiento. S3 significa Amazon Simple Storage Service (Servicio de Almacenamiento Simple) permite almacenar todos los datos semi estructurados y no estructurados.
 
@@ -38,7 +44,7 @@ En S3 los archivos se guardan como objetos dentro de folders llamados cubetas (b
 
 Cada vez que se carga un objeto a un bucket en S3, se crea una clave única para el objeto, incluye un identificador de la versión del objeto.
 
-#### Lago de Datos - Data Lake
+#### Lago de Datos
 Un lago de datos es un repositorio centalizado que nos permite almacenar datos del tipo estructurado, semi estructurado y no estrucutado a cualquier escala.
 
 Almacenar los archivos de una organización conlleva los siguientes desafios, en que carpeta debería almacenarlo, usar prefijos o sufijos para identificar versiones, se divide por tema específico o departamento. A partir de lo anteriormente descrito y la necesidad de organizar mejor la información de cada vez mayor volumen se dio el surgimiento de los lagos de datos.
@@ -51,7 +57,7 @@ El lago de datos nos permite comprender que información es la que tenemos almac
 
 [DataLakes](https://aws.amazon.com/es/big-data/datalakes-and-analytics/)
 
-##### ¿Qué datos podemos guardar de un lago de datos?
+##### ¿Qué datos podemos guardar en un lago de datos?
 - Se puede alimentar de información proveniente de sistemas y servidores propios de la organización, los soporta en su formato original. No requiere crear estructuras de datos, esquemas y transformaciones previas.
 - Datos relacionales, datos de las aplicaciones del negocio, aplicaciones móviles, dispositovos conectados a internet y redes sociales.
 - Obtener datos en vivo, en tiempo real.
