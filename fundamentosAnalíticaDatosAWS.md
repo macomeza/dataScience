@@ -29,5 +29,5 @@ Te recomiendo mi publicación en medium sobre el desafío de las 5Vs [ir a 5 des
 A continuación te invito a conocer para cada "V" una mejor descripción y los servicios que pone AWS para cada desafío.
 - [Volumen](https://github.com/macomeza/dataScience/blob/main/volumen.md#volumen)
 - [Velocidad](https://github.com/macomeza/dataScience/blob/main/velocidad.md#velocidad)
-- [Variedad](https://github.com/macomeza/dataScience/blob/main/variedad.md#variedad)
+- [Variedad - (en proceso)](https://github.com/macomeza/dataScience/blob/main/variedad.md#variedad)
 
