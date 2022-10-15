@@ -20,10 +20,13 @@ Secciones
   - [Amazon Redshift](#amazon-redshift)
   - [Ventajas y desventajas de las bases de datos relacionales](#ventajas-y-desventajas-de-las-bases-de-datos-relacionales)
 - [Bases de datos no relacionales](#bases-de-datos-no-relacionales) 
+  - [Cambios de esquema en bases de datos relacionales y no relacionales](#cambios-de-esquema-en-bases-de-datos-relacionales-y-no-relacionales)
   - [Tipos de bases de datos no relacionales](#tipos-de-bases-de-datos-no-relacionales) 
     - [Documentos](#documentos)
     - [Valor de clave](#valor-de-clave)
+      - [Amazon DynamoDB](#amazon-dynamodb)
     - [Grafos](#grafos)
+      - [Amazon Neptune](#amazon-neptune)
 
 ## Tipos de orígenes de datos
 > Los datos estructurados facilitan el análisis de datos, pero no son flexible. Los semiestructurados pueden necesitar preprocesamiento, pero son muy flexibles. Los no estructurados tienen todo lo que necesitamos, pero en medio de muchas cosas que no nos sirven.
