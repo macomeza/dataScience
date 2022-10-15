@@ -27,7 +27,8 @@ Secciones
       - [Amazon DynamoDB](#amazon-dynamodb)
     - [Grafos](#grafos)
       - [Amazon Neptune](#amazon-neptune)
-  - [Ventajas y desventajas de las bases de datos no relacionales]()
+- [Ventajas y desventajas de las bases de datos no relacionales](#ventajas-y-desventajas-de-las-bases-de-datos-no-relacionales)
+- [Comparación entre bases de datos relacionales y no relacionales](#comparaci%C3%B3n-entre-bases-de-datos-relacionales-y-no-relacionales)
 
 ## Tipos de orígenes de datos
 > Los datos estructurados facilitan el análisis de datos, pero no son flexible. Los semiestructurados pueden necesitar preprocesamiento, pero son muy flexibles. Los no estructurados tienen todo lo que necesitamos, pero en medio de muchas cosas que no nos sirven.
@@ -167,7 +168,7 @@ Debilidades:
 ##### Amazon Neptune
 Es un servicio de base de datos de grafos rápido, fiable y completamente administrado, para trabajar con conjuntos de datos altamente conectados. Tiene un motor de base de datos de grafos de alto rendimiento, creado para almacenar miles de millones de relaciones con una latencia de milisegundos.
 
-#### Ventajas y desventajas de las bases de datos no relacionales
+### Ventajas y desventajas de las bases de datos no relacionales
 Ofrecen un esquema dinámico, lo cual permite actualizar el esquema sin impactar al sistema. Se pueden escalar fácilmente en servidores básicos distribuidos. La distribución masiva tiene la desventaja que los datos no se actualizan de forma instantánea con cada cambio, se ponen al día en segundo plano. Sin embargo, es importante notar que DynamoDB si cumple con ACID.
 Las bases de datos no relacionales no funcionan tan bien en aplicaciones que requieren latencia transaccional extremadamente baja y aún no son tan maduras como las relacionales.
 
