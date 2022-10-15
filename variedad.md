@@ -1,7 +1,7 @@
 # Variedad
 > Cuando la organización está *abrumada* por la gran cantidad de fuentes de datos que se deben analizar y no encuentra sistemas para llevar a cabo la analítica, tenemos un problema de variedad.
 
-Se dice que hay tantos tipos de datos como personas. Los origenes 
+Se dice que hay tantos tipos de datos como personas. 
 Secciones
 - [Tipos de orígenes de datos](#tipos-de-or%C3%ADgenes-de-datos)
   - [Datos estructurados](#datos-estructurados)
@@ -109,6 +109,11 @@ La principal desventaja es su escalabilidad y la rigidez de su esquema.
 ## Bases de datos no relacionales
 Los datos semiestructurados y no estructurados se almacenan en bases de datos no relacionales o NoSQL. Para evitar confusiones, las bases de datos NoSQL son un poco más que solo SQL. 
 
+### Cambios de esquema en bases de datos relacionales y no relacionales
+- Esquemas de datos, una base de datos relacional almacena datos en forma de tablas que contienen filas, cada fila representa un tipo de registro único. Cada columna almacena atributos de dicho registro. En una base de datos no relacional se almacenan los datos en forma de archivos con grupos de información entre corchetes, cada grupo de información también representa un registro.
+- Hacer un cambio en un esquema relacional, cuando se necesita una nueva columna, se debe permitir que acepte valores nulos, luego se tendrá que rellenar con un valor para cada registro existente.
+- Hacer un cambio en un esquema no relacional, acá solo es necesario añadir los valores al registro de interés. Siendo esta una de las mayores ventajas de este tipo de bases de datos.
+
 ### Tipos de bases de datos no relacionales
 #### Documentos
 Almacena datos semiestructurados y no estructurados, se incluyen archivos tipo JSON, BSON, XML. Los archivos contienen datos como una serie de elementos, cada elemento es una instancia de un objeto. 
@@ -136,4 +141,24 @@ Debilidades:
 - Actualizar o editar el contenido es muy difícil.
 - No es fácil modelar objetos en pares de valor y clave.
 
+#### Amazon DynamoDB
+Es una base de datos de valor de clave y de documentos que ofrece rendimiento de menos de 10 milisegundos. Es completamente administrada, incluyendo seguridad integrada, copias de seguridad y restauración, caché en memoria. Puede gestionar 10 billones de solicitudes por día y picos de 20 millones de solicitudes por segundo.
+Funciona para aplicaciones móviles, web, juegos, publicidad, IoT y todo tipo de aplicaciones que requieran baja latencia.
+
 #### Grafos
+Se crean para almacenar cualquier tipo de datos, permiten navegar a través de las relaciones. Se consultan mediante un lenguaje específico asociado a la herramienta que software que se seleccione.
+Los datos se almacenan como un nodo, las aristas almacenan información sobre las relaciones entre los nodos. Una arista tiene un nodo inicial, un nodo final, un tipo y una dirección, y una arista puede describir varias relaciones principal-secundario, acciones, propiedades, etc.
+
+Ventajas:
+- Recuperación sencilla y rápida de estructuras jerárquicas complejas.
+- Es ideal para la minería de grandes datos en tiempo real.
+- Se pueden identificar con rapidez puntos comunes entre nodos.
+- Ideal para hacer recomendaciones y permitir consulta rápida de esas relaciones.
+
+Debilidades:
+- No se pueden almacenar datos transaccionales.
+- Se requiere un lenguaje nuevo.
+- Los análisis sobre los datos no son tan eficientes.
+
+##### Amazon Neptune
+Es un servicio de base de datos de grafos rápido, fiable y completamente administrado, para trabajar con conjuntos de datos altamente conectados. Tiene un motor de base de datos de grafos de alto rendimiento, creado para almacenar miles de millones de relaciones con una latencia de milisegundos.
