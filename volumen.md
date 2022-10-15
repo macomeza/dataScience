@@ -66,6 +66,8 @@ La preparación de los datos requiere bastante esfuerzo, no hay atajos o respues
 - Asegurar el acceso a los datos a través del Lago de Datos.
 - Orquestar las tareas de transformación con otros servicios de AWS.
 
+Es un servicio para organizar y seleccionar los datos, proteger los datos del lago de datos y para coordinar las tareas de transformación con otros servicios de AWS.
+
 [AWS Lake Formation](https://aws.amazon.com/es/lake-formation)
 
 #### Cuál es mejor un Data Warehouse o un Data Lake
@@ -79,6 +81,8 @@ Los datos fluyen desde los sistemas transaccionales, bases de datos relacionales
 Los datos se guardan en el Data Warehouse usando un esquema, el cual define cómo los datos se guardarán en tablas, columnas y filas. El esquema fuerza algunas restricciones en los datos para asegurar su integridad. El proceso de transformación también requiere algunos pasos para que los datos se ajusten al esquema. Después del primer consumo de datos, el proceso puede continuar regularmente.
 
 Los analistas de negocio, científicos de datos y los tomadores de decisiones acceden los datos a través de herramienta de inteligencia de negocio, clientes SQL y otras aplicaciones de analítica. 
+
+Los almacenes de datos proporcionan almacenamiento para conjuntos de datos muy estructurados que sirven como única fuente de verdad para las consultas analíticas.
 
 Data marts
 : Es un conjunto de datos de un Data Warehouse. Se enfoca en un tema específico o en un área funcional de la organización.
