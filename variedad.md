@@ -177,7 +177,7 @@ Las bases de datos no relacionales no funcionan tan bien en aplicaciones que req
 |----------------|------------|---------------|--------|
 | Representación | Múltiples tablas, cada una con columnas y filas. | Colección de documentos, tabla única con claves y valores. | Colección de nodos y relaciones. |
 | Diseño de datos | Almacén de datos relacional o dimensional normalizado. | Desnormalizado, columna ancha o valor clave. | Relación de entidad desnormalizada. |
-| Optimizado | Almacenamiento | Informática | Relaciones |
+| Optimizado | Almacenamiento | Informática / Cálculo | Relaciones |
 | Estilo de consulta | SQL | Muchos lenguajes (consulta objetos) | Muchos lenguajes (consulta de objetos) |
 | Escalado | Vertical | Horizontal | Híbrido |
 | Implementación | Sistemas empresariales OLTP, OLAP | web/móvil OLTP | web/móvil OLTP |
