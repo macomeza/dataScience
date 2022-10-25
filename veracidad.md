@@ -63,13 +63,23 @@ Hay 2 tipos de esquemas:
 Es una base de datos de metadatos que contienen información sobre todos los objetos de la base de datos, su finalidad es definir lo que son todos los objetos de la base de datos y registrar la información vital sobre ellos, como el nombre y tamaño de una tabla, sus índices y las restricciones sobre los datos de cada tabla, configuración de seguridad de los usuarios, recursos de datos externos y configuración de administración.
 
 ### Coherencia de la base de datos
+Los dos métodos que implementan las bases de datos para mantener la veracidad de los datos almacenados son ACID y BASE.
+- ACID: Atomicity (atomicidad), Consistency (coherencia), Isolation (aislamiento), Durability (durabilidad). Es un método para mantener la coherencia y la integridad en una base de datos estructurada.
+- Atomicidad - o funciona o falla completamente.
+- Coherencia - todas las transacciones proporcionan datos válidos.
+- Aislamiento - una transacción no interfiera con otra transacción simultánea.
+- Durabilidad - una vez hechos los cambios, estos se mantendrán.
 
+- BASE: viene de Basically Available (disponibilidad básica) Soft state (estado temporal) Eventually consistent (coherencia final). Es un método para mantener la coherencia y la integridad en una base de datos estructurada o semiestructurada.
+- Disponibilidad básica - permite que una instancia reciba una solicitud de cambio y lo haga inmediatamente. El sistema garantiza una respuesta para cada solicitud. Sin embargo, es posible que la respuesta sea un error o datos obsoletos por un cambio no replicado en todos los nodos.
+- Estado temporal - se permite coherencia parcial entre las instancias distribuidas. También llamado *estado modificable*.
+- Consistencia eventual - los datos son coherentes con el tiempo, el cambio terminará efectuándose en todas las copias, sin embargo estarán disponibles aunque no se haya propagado el cambio.
 
 #### Conformidad con ACID
-
+Una transacción es una secuencia de instrucciones ejecutadas conjuntamente. El objetivo es devolver la versión más reciente de todos los datos y garantizar que los datos introducidos en el sistema cumplan con las reglas y restricciones en todo momento.
 
 #### Conformidad con BASE
-
+Soporta la integridad en bases de datos no relacionales, NoSQL. La principal preocupación de estas bases de datos es la disponibilidad de los datos frente a la coherencia de estos, los cambios en los datos están disponibles de inmediato en la instancia en que se han efectuado, sin embargo, la replicación puede tomar cierto tiempo en replicarse en las demás instancias.
 
 #### ACID vs. BASE
 | ACID | BASE |
@@ -78,3 +88,6 @@ Es una base de datos de metadatos que contienen información sobre todos los obj
 | El aislamiento es clave | La disponibilidad es clave |
 | Centrado en los resultados confirmados | Resultados del mejor esfuerzo |
 | Disponibilidad conservadora (pesimista) | Disponibilidad agresiva (optimista)|
+
+#### DynamoDB implementa ACID
+Se implementa la conformidad ACID en una o varias tablas de una sola cuenta y por una región de AWS.
