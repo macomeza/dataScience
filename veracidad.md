@@ -10,10 +10,23 @@ Secciones
 - [El problema de la veracidad](#el-problema-de-la-veracidad)
 - [¿Qué es la integridad de los datos?](#qu%C3%A9-es-la-integridad-de-los-datos)
 - [Identificación de problemas de integridad de datos](#identificaci%C3%B3n-de-problemas-de-integridad-de-datos)
+  - [Conocer si su aspecto es limpio](#conocer-si-su-aspecto-es-limpio)
+  - [Conocer de dónde proceden los errores](#conocer-de-d%C3%B3nde-proceden-los-errores)
+  - [Conocer el aspecto de los cambios aceptables](#conocer-el-aspecto-de-los-cambios-aceptables)
+  - [Conocer si los datos originales tienen valor](#conocer-si-los-datos-originales-tienen-valor)
 - [Esquemas de base de datos](#esquemas-de-base-de-datos)
+  - [Esquema de datos](#esquema-de-datos)
+  - [Esquema de información](#esquema-de-informaci%C3%B3n)
 - [Coherencia de la base de datos](#coherencia-de-la-base-de-datos)
+  - [Conformidad con ACID](#conformidad-con-acid)
+  - [Conformidad con BASE](#conformidad-con-base)
   - [ACID vs BASE](#acid-vs-base)
 - [ETL](#etl)
+  - [Extracción de datos](#extracci%C3%B3n-de-datos)
+  - [Transformación de datos](#transformaci%C3%B3n-de-datos)
+  - [Carga de datos](#carga-de-datos)
+  - [Servicios de AWS en el proceso ETL](#servicios-de-aws-en-el-proceso-etl)
+    - [EMR vs. Glue](#emr-vs-glue)
 
 ### El problema de la veracidad
 Los datos cambian con el tiempo. A medida que se transfieren de un proceso a otro, y a través de sistemas, hay probabilidad que la integridad de los datos se vea afectada de manera negativa. Hay que asegurarse de mantener un alto nivel de certeza que los datos que se analizan sean fiables.
