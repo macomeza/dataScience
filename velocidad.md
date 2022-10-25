@@ -1,4 +1,4 @@
-### Velocidad
+## Velocidad
 > Cuándo las organizaciones necesitan rápido conocimiento desde los datos que están recolectando, pero los sistemas no pueden satisfacer la demanda, se presenta un problema de velocidad.
 
 Secciones
