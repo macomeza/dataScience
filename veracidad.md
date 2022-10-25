@@ -1,4 +1,4 @@
-##Veracidad
+## Veracidad
 
 > Cuando tienes datos que no están bajo control, que vienen de diferentes sistemas y no puedes seleccionar los datos asegurando la calidad, tienes un problema de veracidad.
 
@@ -9,5 +9,5 @@
 Secciones
 - [El problema de la veracidad](#el-problema-de-la-veracidad)
 
-###El problema de la veracidad
+### El problema de la veracidad
 
