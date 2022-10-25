@@ -11,6 +11,7 @@ Secciones
 - [¿Qué es la integridad de los datos?](#qu%C3%A9-es-la-integridad-de-los-datos)
 - [Identificación de problemas de integridad de datos](#identificaci%C3%B3n-de-problemas-de-integridad-de-datos)
 - [Esquemas de base de datos](#esquemas-de-base-de-datos)
+- [Coherencia de la base de datos](#coherencia-de-la-base-de-datos)
 
 ### El problema de la veracidad
 Los datos cambian con el tiempo. A medida que se transfieren de un proceso a otro, y a través de sistemas, hay probabilidad que la integridad de los datos se vea afectada de manera negativa. Hay que asegurarse de mantener un alto nivel de certeza que los datos que se analizan sean fiables.
@@ -61,4 +62,19 @@ Hay 2 tipos de esquemas:
 #### Esquema de información
 Es una base de datos de metadatos que contienen información sobre todos los objetos de la base de datos, su finalidad es definir lo que son todos los objetos de la base de datos y registrar la información vital sobre ellos, como el nombre y tamaño de una tabla, sus índices y las restricciones sobre los datos de cada tabla, configuración de seguridad de los usuarios, recursos de datos externos y configuración de administración.
 
+### Coherencia de la base de datos
 
+
+#### Conformidad con ACID
+
+
+#### Conformidad con BASE
+
+
+#### ACID vs. BASE
+| ACID | BASE |
+|------|------|
+| Coherencia fuerte | Coherencia débil. Los datos obsoletos son correctos.|
+| El aislamiento es clave | La disponibilidad es clave |
+| Centrado en los resultados confirmados | Resultados del mejor esfuerzo |
+| Disponibilidad conservadora (pesimista) | Disponibilidad agresiva (optimista)|
