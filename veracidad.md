@@ -8,7 +8,7 @@
 
 Secciones
 - [El problema de la veracidad](#el-problema-de-la-veracidad)
-- [¿Qué es la intgridad de los datos?]()
+- [¿Qué es la intgridad de los datos?](#qu%C3%A9-es-la-integridad-de-los-datos)
 
 ### El problema de la veracidad
 Los datos cambian con el tiempo. A medida que se transfieren de un proceso a otro, y a través de sistemas, hay probabilidad que la integridad de los datos se vea afectada de manera negativa. Hay que asegurarse de mantener un alto nivel de certeza que los datos que se analizan sean fiables.
