@@ -12,6 +12,7 @@ Secciones
 - [Identificación de problemas de integridad de datos](#identificaci%C3%B3n-de-problemas-de-integridad-de-datos)
 - [Esquemas de base de datos](#esquemas-de-base-de-datos)
 - [Coherencia de la base de datos](#coherencia-de-la-base-de-datos)
+- [ETL](#etl)
 
 ### El problema de la veracidad
 Los datos cambian con el tiempo. A medida que se transfieren de un proceso a otro, y a través de sistemas, hay probabilidad que la integridad de los datos se vea afectada de manera negativa. Hay que asegurarse de mantener un alto nivel de certeza que los datos que se analizan sean fiables.
