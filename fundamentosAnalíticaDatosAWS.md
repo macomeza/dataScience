@@ -30,4 +30,6 @@ A continuación te invito a conocer para cada "V" una mejor descripción y los s
 - [Volumen](https://github.com/macomeza/dataScience/blob/main/volumen.md#volumen)
 - [Velocidad](https://github.com/macomeza/dataScience/blob/main/velocidad.md#velocidad)
 - [Variedad](https://github.com/macomeza/dataScience/blob/main/variedad.md#variedad)
+- [Veracidad](https://github.com/macomeza/dataScience/blob/main/veracidad.md#veracidad)
+- [Valor](https://github.com/macomeza/dataScience/blob/main/valor.md#valor)
 
