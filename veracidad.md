@@ -34,7 +34,7 @@ Los datos cambian con el tiempo. A medida que se transfieren de un proceso a otr
 ### ¿Qué es la integridad de los datos?
 Se refiere a asegurar que los datos sean fiables. Para asegurar la integridad es necesario asegurar cada paso del ciclo de vida de datos.
 
-- *Creación* - se debe asegurar la exactitud desde la creación, para ello se requiere cierta confianza en los sistemas que recopilan datos, para ello se realizarán auditorias regulares, para asegurar qye generan datos o archivos válidos y que los cambios no afectarán negativamente a la integridad del sistema. 
+- *Creación* - se debe asegurar la exactitud desde la creación, para ello se requiere cierta confianza en los sistemas que recopilan datos, para ello se realizarán auditorias regulares, para asegurar que generan datos o archivos válidos y que los cambios no afectarán negativamente a la integridad del sistema. 
 - *Adición* - los datos no siempre están añadidos, pero muchas veces para la analítica se requiere que las métricas estén bien definidas y se asegure la integridad de los datos agrupados.
 - *Almacenamiento* - esta fase es de las más estables, hay que asegurar que los datos sean actualizados solo por quienes estén autorizados y los datos que deben permanecer estables nunca cambien.
 - *Acceso*- los datos están disponibles en modo lectura, estos datos se reflejarán en informes y tableros de control.
@@ -65,7 +65,7 @@ Son pequeños detalles que pueden marcar la diferencia, como consolidar estados 
 Algunas veces los datos originales pierden su valor tras ser transformados, sin embargo, en datos regulados o muy volátiles se deben conservar en el destino.
 
 ### Esquemas de base de datos
-Las bases de datos relacionales se basan en esquemas para organizar el contenido de las mismas y permite aplicar la integridad referencial y de dominio. 
+Las bases de datos relacionales se basan en esquemas para organizar el contenido de estas y permite aplicar la integridad referencial y de dominio. 
 
 #### Esquema de datos
 Es el conjunto de metadatos usados por la base de datos para organizar los objetos y aplicar las restricciones de integridad. Una base de datos puede tener uno o varios esquemas.
@@ -88,7 +88,7 @@ Los dos métodos que implementan las bases de datos para mantener la veracidad d
 - BASE: viene de Basically Available (disponibilidad básica) Soft state (estado temporal) Eventually consistent (coherencia final). Es un método para mantener la coherencia y la integridad en una base de datos estructurada o semiestructurada.
 - Disponibilidad básica - permite que una instancia reciba una solicitud de cambio y lo haga inmediatamente. El sistema garantiza una respuesta para cada solicitud. Sin embargo, es posible que la respuesta sea un error o datos obsoletos por un cambio no replicado en todos los nodos.
 - Estado temporal - se permite coherencia parcial entre las instancias distribuidas. También llamado *estado modificable*.
-- Consistencia eventual - los datos son coherentes con el tiempo, el cambio terminará efectuándose en todas las copias, sin embargo estarán disponibles aunque no se haya propagado el cambio.
+- Consistencia eventual - los datos son coherentes con el tiempo, el cambio terminará efectuándose en todas las copias, sin embargo, estarán disponibles aunque no se haya propagado el cambio.
 
 #### Conformidad con ACID
 Una transacción es una secuencia de instrucciones ejecutadas conjuntamente. El objetivo es devolver la versión más reciente de todos los datos y garantizar que los datos introducidos en el sistema cumplan con las reglas y restricciones en todo momento.
@@ -99,7 +99,7 @@ Soporta la integridad en bases de datos no relacionales, NoSQL. La principal pre
 #### ACID vs. BASE
 | ACID | BASE |
 |------|------|
-| Coherencia fuerte | Coherencia débil. Los datos obsoletos son correctos.|
+| Coherencia fuerte | Coherencia débil. Los datos obsoletos son correctos. |
 | El aislamiento es clave | La disponibilidad es clave |
 | Centrado en los resultados confirmados | Resultados del mejor esfuerzo |
 | Disponibilidad conservadora (pesimista) | Disponibilidad agresiva (optimista)|
@@ -113,7 +113,7 @@ Extraer, transformar y cargar, es el proceso de recopilar datos de orígenes de 
 #### Extracción de datos
 Es probablemente la fase más importante, seguramente tendremos varias ubicaciones y varios tipos, registros de transacciones, bases de datos de productos, orígenes de datos públicos o flujos de aplicaciones.
 
-- Se debe identificar dónde estan los datos de origen (internos o externos)
+- Se debe identificar dónde están los datos de origen (internos o externos)
 - Se debe planificar cuándo se llevará a cabo la extracción.
 - Planificar dónde se almacenarán los datos durante el proceso, conocida como ubicación de almacenamiento provisional.
 - Con qué frecuencia debe repetirse la extracción.
@@ -133,6 +133,6 @@ Elegir la ubicación para guardar los datos transformados. Puede ser una base de
 - Generación de informes - Elasticseach, Kibana nos dan la flexibilidad y capacidad de obtener información de conjuntos de datos más grandes.
 
 ##### EMR vs Glue
-EMR es una plataforma robusta de recopilación y procesamiento de datos, si requiere conocimiento técnico y práctico. Permite crear una canalización más personailizada, los costes de infraestructura pueden ser inferiores respecto a Glue.
+EMR es una plataforma robusta de recopilación y procesamiento de datos, si requiere conocimiento técnico y práctico. Permite crear una canalización más personalizada, los costes de infraestructura pueden ser inferiores respecto a Glue.
 
 Glue es una herramienta ETL administrada, sin servidor, más simplificada que EMR. Es recomendado para tareas simples. Se puede utilizar como almacén de metadatos par los datos transformados mediante el catálogo.
