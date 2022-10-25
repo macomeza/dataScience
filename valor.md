@@ -3,8 +3,8 @@
 > Cuando hay grandes volúmenes de datos usados para respaldar información valiosa, puede que no estemos aprovechando todo el valor de los datos. El esfuerzo real es averiguar cuál es el valor de los datos y extraer dicho valor de lo recopilado.
 
 Secciones:
-- [¿Qué es el análisis de datos?]()
-  - [Tipos de análisis de datos]()
+- [¿Qué es el análisis de datos?](#qu%C3%A9-es-el-an%C3%A1lisis-de-datos)
+  - [Tipos de análisis de datos](#tipos-de-an%C3%A1lisis-de-datos)
 
 ### ¿Qué es el análisis de datos?
 Los datos sin interpretación o sin significado son irrelevantes. Es como escuchar un idioma que no conocemos, mientras cuando si conocemos el idioma podemos comprenderlo y aprovecharlo.
