@@ -91,3 +91,33 @@ Soporta la integridad en bases de datos no relacionales, NoSQL. La principal pre
 
 #### DynamoDB implementa ACID
 Se implementa la conformidad ACID en una o varias tablas de una sola cuenta y por una región de AWS.
+
+### ETL
+Extraer, transformar y cargar, es el proceso de recopilar datos de orígenes de datos sin procesar y transformarlos en un tipo común, luego se cargan a una ubicación final permitiendo la analítica e inspección de datos. 
+
+#### Extracción de datos
+Es probablemente la fase más importante, seguramente tendremos varias ubicaciones y varios tipos, registros de transacciones, bases de datos de productos, orígenes de datos públicos o flujos de aplicaciones.
+
+- Se debe identificar dónde estan los datos de origen (internos o externos)
+- Se debe planificar cuándo se llevará a cabo la extracción.
+- Planificar dónde se almacenarán los datos durante el proceso, conocida como ubicación de almacenamiento provisional.
+- Con qué frecuencia debe repetirse la extracción.
+
+#### Transformación de datos
+Es convertir los datos a un formato uniforme que se pueda consultar. La limpieza de datos también se lleva a cabo en esta etapa. También se realizarán sustituciones de valores, en base a reglas de negocio.
+
+#### Carga de datos
+Elegir la ubicación para guardar los datos transformados. Puede ser una base de datos, un almacén de datos o un lago de datos.
+
+#### Servicios de AWS en el proceso ETL
+- Orígenes de datos en las instalaciones y en la nube - S3 para datos basados en archivos, RDS para datos transaccionales, Redshift para datos analíticos, DynamoDB para datos no relacionales.
+- Actualizaciones de transmisiones o por lotes - la ingesta de datos se puede hacer con Kinesis si son datos tipo transmisión o para lotes se puede utilizar EMR o Glue.
+- Lago de datos operativo - S3
+- Almacenamiento de datos - se puede usar Redshift para almacenes de datos y mercados de datos.
+- Informes y paneles - Quicksight permite hacer informes, Athena permite hacer consultas a la medida.
+- Generación de informes - Elasticseach, Kibana nos dan la flexibilidad y capacidad de obtener información de conjuntos de datos más grandes.
+
+##### EMR vs Glue
+EMR es una plataforma robusta de recopilación y procesamiento de datos, si requiere conocimiento técnico y práctico. Permite crear una canalización más personailizada, los costes de infraestructura pueden ser inferiores respecto a Glue.
+
+Glue es una herramienta ETL administrada, sin servidor, más simplificada que EMR. Es recomendado para tareas simples. Se puede utilizar como almacén de metadatos par los datos transformados mediante el catálogo.
