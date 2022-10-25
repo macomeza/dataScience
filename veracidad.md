@@ -12,6 +12,7 @@ Secciones
 - [Identificación de problemas de integridad de datos](#identificaci%C3%B3n-de-problemas-de-integridad-de-datos)
 - [Esquemas de base de datos](#esquemas-de-base-de-datos)
 - [Coherencia de la base de datos](#coherencia-de-la-base-de-datos)
+  - [ACID vs BASE](#acid-vs-base)
 - [ETL](#etl)
 
 ### El problema de la veracidad
