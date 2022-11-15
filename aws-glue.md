@@ -19,4 +19,4 @@ Es un catálogo de datos, donde se almacena metadatos, contiene la estructura de
 ### Connections
 Las conecciones permiten a Glue poder acceder a las diferentes fuentes de datos, encriptando credenciales y nombre de los servidores.
 
-![Arquitectura (https://github.com/macomeza/dataScience/blob/main/AWSGlueArquitecturaEjemplo.jpg)
+![Arquitectura de AWS Glue para ejemplo](https://github.com/macomeza/dataScience/blob/main/AWSGlueArquitecturaEjemplo.jpg)
