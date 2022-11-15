@@ -34,7 +34,13 @@ Es necesario tener acceso a un bucket, es una buena práctica usar una carpeta p
 Al tener cargado el archivo, cambiaremos de servicio en la conola a AWS Glue. Luego seleccionaremos Tables, luego daremos un clic en *Add tables using crawler*, le daremos un nombre a nuestro Crawler, le nombraremos s3-spc-fabrica-raw, dado que va a leer toda la carpeta de nuestro bucket.
 
 ![Crear crawler](https://github.com/macomeza/dataScience/blob/main/awsGlue/01-crawler.jpg)
+
+Luego vamos a añadirle una fuente de datos.
+
 ![Añadir fuente de datos](https://github.com/macomeza/dataScience/blob/main/awsGlue/02-crawler.jpg)
+
+De las diferentes fuentes de datos, vamos a seleccionar que el tipo es S3 y luego seleccionaremos el folder de nuestro bucket que contiene la data cruda.
+
 ![Seleccionar fuente de datos](https://github.com/macomeza/dataScience/blob/main/awsGlue/02-1-crawler.jpg)
 
 
