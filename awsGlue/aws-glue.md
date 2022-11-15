@@ -29,7 +29,11 @@ Si hubieramos tenido una fuente de datos que fuera una base de datos relacionalp
 
 A nuestro S3, cargaremos como ejemplo el [SaaS-Sales.csv](https://github.com/macomeza/dataScience/blob/main/awsGlue/SaaS-Sales.csv).
 
-Es necesario tener acceso a un bucket, es una buena práctica usar una carpeta para los datos crudos que lo indique explicitamente, en nuestro ejemplo se indica mediante el término *raw* y también se completa el nombre de la carpeta con la región que estamos utilizando, esto es útil para acceso desde otros servicios.
+## Requisitos
+
+- Es necesario tener acceso a un bucket, es una buena práctica usar una carpeta para los datos crudos que lo indique explicitamente, en nuestro ejemplo se indica mediante el término *raw* y también se completa el nombre de la carpeta con la región que estamos utilizando, esto es útil para acceso desde otros servicios.
+- También es necesario tener creada o definir la base de datos en AWS Glue para generar las tablas que descubra el Crawler.
+
 
 Al tener cargado el archivo, cambiaremos de servicio en la conola a AWS Glue. Luego seleccionaremos Tables, luego daremos un clic en *Add tables using crawler*, le daremos un nombre a nuestro Crawler, le nombraremos s3-spc-fabrica-raw, dado que va a leer toda la carpeta de nuestro bucket.
 
