@@ -29,10 +29,12 @@ Dado que en nuestro ejemplo usaremos una base de datos SQL Server que se encuent
 
 ![Jar de driver para conectar a un servidor MS SQL Server](https://github.com/macomeza/dataScience/blob/main/awsGlue/01-descargar-driver-MSSQL.jpg)
 
-Luego crearemos un conector personalizado 
+Luego crearemos un conector personalizado, haciendo clic en "Connectors" dentro de AWS Glue Studio y luego en "Create custom connector".
+
 ![Creando un conector personalizado](https://github.com/macomeza/dataScience/blob/main/awsGlue/02-crear-conector-personalizado.jpg)
 
 El cual definiremos con las siguientes características:
+
 ![Características de nuestro conector](https://github.com/macomeza/dataScience/blob/main/awsGlue/03-conector_mssql_vpc.jpg)
 
 
