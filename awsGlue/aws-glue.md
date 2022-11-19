@@ -27,6 +27,8 @@ En algunos casos es necesario crear un conector, este permite utilizar un driver
 
 Dado que en nuestro ejemplo usaremos una base de datos SQL Server que se encuentra físicamente en el Ingenio pero que está conectada con Amazon a través de una VPC (segmento de red que enlaza una VPN desde AWS hacia el centro de cómputo) definiremos una conexión personalizada, esto requiere la creación de un conector que hace referencia al driver más reciente para conectar a MSSQL Server, el cual se descarga desde Microsoft y se sube a una carpeta dentro de un bucket en el que tengamos acceso, la buena práctica recomienda nombrar a la subcarpeta connectors para poderle identificar fácilmente.
 
+En el momento de publicar este artículo, el link de descarga del driver fue el [siguiente](https://go.microsoft.com/fwlink/?linkid=2202911)
+
 ![Jar de driver para conectar a un servidor MS SQL Server](https://github.com/macomeza/dataScience/blob/main/awsGlue/01-descargar-driver-MSSQL.jpg)
 
 Luego crearemos un conector personalizado, haciendo clic en "Connectors" dentro de AWS Glue Studio y luego en "Create custom connector".
