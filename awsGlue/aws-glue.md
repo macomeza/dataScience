@@ -33,11 +33,11 @@ En el momento de publicar este artículo, el link de descarga del driver fue el 
 
 Luego crearemos un conector personalizado, haciendo clic en "Connectors" dentro de AWS Glue Studio y luego en "Create custom connector".
 
-![Creando un conector personalizado](https://github.com/macomeza/dataScience/blob/main/awsGlue/02-crear-conector-personalizado.jpg)
+![Creando un conector personalizado](https://github.com/macomeza/dataScience/blob/main/awsGlue/02-crear-conector-personalizado.png)
 
 El cual definiremos con las siguientes características:
 
-![Características de nuestro conector](https://github.com/macomeza/dataScience/blob/main/awsGlue/03-conector_mssql_vpc.jpg)
+![Características de nuestro conector](https://github.com/macomeza/dataScience/blob/main/awsGlue/03-conector_mssql_vpc.png)
 
 
 ## Requisitos
