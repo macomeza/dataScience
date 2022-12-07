@@ -36,7 +36,15 @@ Paso 5, seleccionaremos la base de datos destino, luego le pondremos un prefijo 
 
 Paso 6, le damos clic en guardar y luego lo pondremos a ejecutar.
 
+![Guardar la configuración](https://github.com/macomeza/dataScience/blob/main/awsGlue/processed/09-crearCrawler.png)
+
+Para ejecutarlo se selecciona la acción de Run.
+
+![Ejecutar el crawler](https://github.com/macomeza/dataScience/blob/main/awsGlue/processed/10-ejecutarCrawler.png)
+
 Listo, solo es de esperar a que concluya la corrida, nos habrá añadido la tabla a la base de datos, esta contendrá la estructura (schema) y podemos previsualizar los datos desde Athena.
+
+![Ver datos de la tabla](https://github.com/macomeza/dataScience/blob/main/awsGlue/processed/11-verTabla.png)
 
 Posteriormente, podemos ingresar a QuickSight, crear un dataset cuyo origen es Athena y seleccionamos las tablas que nos interesan para crear nuestro tablero de control.
 
