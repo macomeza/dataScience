@@ -46,6 +46,36 @@ Listo, solo es de esperar a que concluya la corrida, nos habrá añadido la tabl
 
 ![Ver datos de la tabla](https://github.com/macomeza/dataScience/blob/main/awsGlue/processed/11-verTabla.png)
 
+![Consulta en Athena](https://github.com/macomeza/dataScience/blob/main/awsGlue/processed/12-resultadoAthena.png)
+
 Posteriormente, podemos ingresar a QuickSight, crear un dataset cuyo origen es Athena y seleccionamos las tablas que nos interesan para crear nuestro tablero de control.
+
+Crearemos el dataset
+
+![Creando un dataset](https://github.com/macomeza/dataScience/blob/main/awsGlue/processed/13-crearDataset.png)
+
+Seleccionaremos Athena como el origen
+
+![Dataset desde Athena](https://github.com/macomeza/dataScience/blob/main/awsGlue/processed/14-datasetDesdeAthena.png)
+
+Seleccionamos el Data Catalog
+
+![Indicamos el DataCatalog](https://github.com/macomeza/dataScience/blob/main/awsGlue/processed/15-establecemosDataCatalog.png)
+
+Seleccionamos la tabla
+
+![Seleccionando la tabla](https://github.com/macomeza/dataScience/blob/main/awsGlue/processed/16-seleccionamosBaseDatosyTabla.png)
+
+Podemos cargar la tabla completa o un query.
+
+![Query](https://github.com/macomeza/dataScience/blob/main/awsGlue/processed/17-establecemosUnQuery.png)
+
+Confirmamos que el resultado del query sea el deseado.
+
+![Resultado preliminar Query](https://github.com/macomeza/dataScience/blob/main/awsGlue/processed/18-resultadoQuery.png)
+
+Finalmente, creamos una tabla pivot en QuickSight, ponemos la variable como fila y en resultado el promedio y la desviación.
+
+![Resultado QuickSight](https://github.com/macomeza/dataScience/blob/main/awsGlue/processed/19-tablaPivotQuickSight.png)
 
 Espero sea de gran utilidad, hasta la próxima.
