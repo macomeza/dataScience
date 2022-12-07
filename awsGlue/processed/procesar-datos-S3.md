@@ -4,7 +4,7 @@ En esta publicación aprenderemos una forma para generar un archivo procesado a 
 
 Paso 1, crearemos un crawler para que obtenga la estructura de nuestros archivos. Esto lo haremos desde Glue Studio. Luego le daremos clic a Crawlers y luego al botón Create crawler.
 
-[!Crear un crawler](https://github.com/macomeza/dataScience/blob/main/awsGlue/processed/01-creandoCrawler.png)
+![Crear un crawler](https://github.com/macomeza/dataScience/blob/main/awsGlue/processed/01-creandoCrawler.png)
 
 Paso 2, le daremos un nombre y descripción, luego le daremos clic en next.
 
