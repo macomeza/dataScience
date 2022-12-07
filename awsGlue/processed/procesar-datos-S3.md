@@ -28,7 +28,10 @@ Añadimos la diagonal a la ruta
 
 Paso 4, seleccionaremos el rol que tiene acceso a Glue.
 
+![Seleccionar el rol](https://github.com/macomeza/dataScience/blob/main/awsGlue/processed/07-rolGlue.png)
+
 Paso 5, seleccionaremos la base de datos destino, luego le pondremos un prefijo y le daremos clic en next.
+
 
 Paso 6, le damos clic en guardar y luego lo pondremos a ejecutar.
 
