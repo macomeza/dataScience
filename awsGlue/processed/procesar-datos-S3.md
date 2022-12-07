@@ -8,7 +8,23 @@ Paso 1, crearemos un crawler para que obtenga la estructura de nuestros archivos
 
 Paso 2, le daremos un nombre y descripción, luego le daremos clic en next.
 
+![Nombrando al Crawler](https://github.com/macomeza/dataScience/blob/main/awsGlue/processed/02-nombrandoCrawler.png)
+
 Paso 3, en el origen de datos le daremos clic en add a data source, seleccionaremos S3 y luego el directorio que contiene los archivos que nos interesan, es importante terminar la carpeta con la /.
+
+![Añadir una fuente de datos](https://github.com/macomeza/dataScience/blob/main/awsGlue/processed/03-a%C3%B1adirFuenteDatos.png)
+
+Buscamos la carpeta dentro del bucket
+
+![Buscar la carpeta](https://github.com/macomeza/dataScience/blob/main/awsGlue/processed/04-buscar.png)
+
+Seleccionamos la carpeta que deseamos
+
+![Seleccionar la carpeta](https://github.com/macomeza/dataScience/blob/main/awsGlue/processed/05-seleccionarCarpeta.png)
+
+Añadimos la diagonal a la ruta
+
+![Añadir la diagonal](https://github.com/macomeza/dataScience/blob/main/awsGlue/processed/06-a%C3%B1adirDiagonal.png)
 
 Paso 4, seleccionaremos el rol que tiene acceso a Glue.
 
