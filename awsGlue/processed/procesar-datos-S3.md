@@ -32,6 +32,7 @@ Paso 4, seleccionaremos el rol que tiene acceso a Glue.
 
 Paso 5, seleccionaremos la base de datos destino, luego le pondremos un prefijo y le daremos clic en next.
 
+![Seleccionar base de datos y establecer prefijo](https://github.com/macomeza/dataScience/blob/main/awsGlue/processed/08-baseDatos.png)
 
 Paso 6, le damos clic en guardar y luego lo pondremos a ejecutar.
 
