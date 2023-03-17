@@ -18,12 +18,13 @@ El formato columnar también permite compresión, hay varios formatos, algunos o
 
 Si tenemos un datalake en AWS S3 en formato de filas, podemos correr un crawler que capturará la estructura del archivo y creará un esquema de tabla (metadata), a la vez hará posible poder hacer consultas desde Athena (cómo si fuera nuestro cliente para ejecutar consultas). En Athena podemos crear una tabla tipo columnar con la siguiente instrucción:
 
-CREATE TABLE <nombre tabla parquet<
+CREATE TABLE <nombre tabla columnar>
 WITH (
       format = 'Parquet',
+      external_location = '<bucket>/parquet/', 
       write_compression = 'SNAPPY')
 AS SELECT *
-FROM <tabla origen almacenada en filas>;
+FROM <tabla origen en filas>;
   
 Así de fácil, podremos ahorrar tiempo, almacenamiento y costo.
   
