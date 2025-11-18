@@ -60,4 +60,33 @@ Configurar la variable de entorno **PATH** permite que KNIME encuentre los WebDr
 1.  Abre el menú de **Inicio** y busca **"Editar las variables de entorno del sistema"**.
 2.  Haz clic en el botón **"Variables de entorno..."**.
 3.  En la sección **"Variables del sistema"**, busca y selecciona la variable llamada **`Path`**.
-4.
+4.  Haz clic en **"Editar..."**.
+5.  En la ventana de edición, haz clic en **"Nuevo"** y añade la ruta de tu carpeta de drivers:
+    * `C:\WebDrivers`
+6.  Haz clic en `Aceptar` en todas las ventanas para guardar los cambios.
+
+---
+
+## 4. Verificación Final (Garantizar Reconocimiento)
+
+Este paso confirma que Windows ha reconocido la nueva ruta en el PATH.
+
+1.  **Abre una nueva ventana** del Símbolo del sistema (`CMD`) o **PowerShell**. (Es crucial que sea una ventana nueva para que se apliquen los cambios del PATH).
+
+2.  **Verifica ChromeDriver:** Ejecuta este comando. Debería devolver la versión del driver.
+    ```bash
+    chromedriver --version
+    ```
+
+3.  **Verifica MSEdgeDriver:** Ejecuta este otro comando. Si el PATH es correcto, también devolverá la versión.
+    ```bash
+    msedgedriver --version
+    ```
+
+### ✅ Resultado Esperado
+
+Si ambos comandos devuelven la versión sin errores, los WebDrivers están listos.
+
+### 5. Uso en KNIME
+
+Al utilizar el nodo **Start WebDriver** en KNIME, puedes dejar el campo **"Driver file path"** vacío. KNIME buscará y utilizará automáticamente el driver en la ruta que acabas de añadir al PATH del sistema.
